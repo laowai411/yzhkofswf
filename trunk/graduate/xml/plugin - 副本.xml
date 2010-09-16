@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin>
+	<plugin id="CenterPanelModule" url="lxf\CenterPanel\CenterPanelModule.swf" preLoad="0" visible="1" bottom="100" horizontalCenter="0"/>
+	<plugin id="MapModule" url="lsd\MapModule.swf" preLoad="0" visible="1" right="500" top="0"/>
+	<plugin id="FishPanelModule" url="lxf\SamplePanel\FishPanelModule.swf" preLoad="0" visible="1" x="500" y="50"/>
+	<plugin id="SampleModule" url="yzhkof\sample\SampleModule.swf" preLoad="0" visible="1"/>
+	<plugin id="PositionModule" url="yzhkof\position\PositionModule.swf" preLoad="0" visible="1" y="20"/>
+</plugin>

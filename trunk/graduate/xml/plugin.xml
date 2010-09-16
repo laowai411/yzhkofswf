@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin>
+ 	<plugin id="PositionModule" url="yzhkof\position\PositionModule.swf" preLoad="0" visible="1" y="20"/>
+</plugin>

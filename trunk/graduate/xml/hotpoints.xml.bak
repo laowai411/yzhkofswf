@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- edited with XMLSPY v5 U (http://www.xmlspy.com) by et8 (et8) -->
+<HotPoints>
+	<HotPoint id="1" texturl="points/text/1.txt"  name="全球通介绍" swfWidth="700" swfHeight="500">
+		<ExhibitInstruction>
+			<Img url="points/img/1.jpg"/>
+			<Img url="points/img/11.jpg"/>
+		</ExhibitInstruction>
+	</HotPoint>
+	<HotPoint id="2" texturl="points/text/2.txt" name="动感地带介绍" swfWidth="700" swfHeight="500">
+		<ExhibitInstruction>
+			<Img url="points/img/2.jpg"/>
+			<Img url="points/img/22.jpg"/>
+		</ExhibitInstruction>
+	</HotPoint>
+	<HotPoint id="3" texturl="points/text/3.txt" name="神州行介绍" swfWidth="700" swfHeight="500">
+		<ExhibitInstruction>
+			<Img url="points/img/3.jpg"/>
+			<Img url="points/img/33.jpg"/>
+		</ExhibitInstruction>
+	</HotPoint>
+</HotPoints>

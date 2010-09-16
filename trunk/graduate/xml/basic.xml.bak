@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- edited with XMLSPY v5 U (http://www.xmlspy.com) by et8 (et8) -->
+<Basic>
+	<Travel start_scene="0" stop_rotationX="0" stop_rotationY="81.90">
+		<!--场景0-->
+		<Scene picture="img/Pano-01.jpg">
+		<HotPoint onClick="showFishPanel();" tip="业务介绍" icon="2" x="8000" y="-174" z="-3000"  width="500" height="500" segmentsW="0" segmentsH="0"/>
+		</Scene>
+	</Travel>
+</Basic>
