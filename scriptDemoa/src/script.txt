@@ -1,0 +1,1 @@
+public class TestClass {	public function TestClass() {		debugObjectTrace("in TestClass's constructor");		debugObjectTrace(doStuff());	}	private function doStuff():String {		return "In private method.";	}}new TestClass;
