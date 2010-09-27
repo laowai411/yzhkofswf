@@ -1,0 +1,86 @@
+<!-- saved from url=(0014)about:internet -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>Multiname_info.as</title>
+<link rel="stylesheet" type="text/css" href="../../../SourceStyles.css"/>
+</head>
+
+<body><pre><span class="ActionScriptpackage">package</span> <span class="ActionScriptDefault_Text">format</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">swf</span>
+<span class="ActionScriptBracket/Brace">{</span>
+    <span class="ActionScriptReserved">import</span> <span class="ActionScriptDefault_Text">flash</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">utils</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">ByteArray</span>;
+
+    <span class="ActionScriptReserved">public</span> <span class="ActionScriptclass">class</span> <span class="ActionScriptDefault_Text">Multiname_info</span> <span class="ActionScriptReserved">extends</span> <span class="ActionScriptDefault_Text">ABCFileStructs</span>
+    <span class="ActionScriptBracket/Brace">{</span>
+        <span class="ActionScriptComment">/*
+        multiname_info
+        {
+            u8 kind
+            u8 data[]
+        } 
+        multiname_kind_QName
+        {
+            u30 ns
+            u30 name
+        } 
+        multiname_kind_RTQName
+        {
+            u30 name
+        }
+        multiname_kind_Multiname
+        {
+            u30 name
+            u30 ns_set
+        }
+        multiname_kind_MultinameL
+        {
+            u30 ns_set
+        }
+        */</span>
+        <span class="ActionScriptReserved">public</span> <span class="ActionScriptvar">var</span> <span class="ActionScriptDefault_Text">kind</span>:<span class="ActionScriptDefault_Text">uint</span>;
+        <span class="ActionScriptReserved">public</span> <span class="ActionScriptvar">var</span> <span class="ActionScriptDefault_Text">ns</span>:<span class="ActionScriptDefault_Text">uint</span>;
+        <span class="ActionScriptReserved">public</span> <span class="ActionScriptvar">var</span> <span class="ActionScriptDefault_Text">name</span>:<span class="ActionScriptDefault_Text">uint</span>;
+        <span class="ActionScriptReserved">public</span> <span class="ActionScriptvar">var</span> <span class="ActionScriptDefault_Text">ns_set</span>:<span class="ActionScriptDefault_Text">uint</span>;
+        <span class="ActionScriptReserved">public</span> <span class="ActionScriptfunction">function</span> <span class="ActionScriptDefault_Text">Multiname_info</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptDefault_Text">byte</span>:<span class="ActionScriptDefault_Text">ByteArray</span><span class="ActionScriptBracket/Brace">)</span>
+        <span class="ActionScriptBracket/Brace">{</span>
+            <span class="ActionScriptReserved">super</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptDefault_Text">byte</span><span class="ActionScriptBracket/Brace">)</span>;
+        <span class="ActionScriptBracket/Brace">}</span>
+        <span class="ActionScriptReserved">protected</span> <span class="ActionScriptReserved">override</span> <span class="ActionScriptfunction">function</span> <span class="ActionScriptDefault_Text">read</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptBracket/Brace">)</span>:<span class="ActionScriptReserved">void</span>
+        <span class="ActionScriptBracket/Brace">{</span>
+            <span class="ActionScriptDefault_Text">kind</span><span class="ActionScriptOperator">=</span><span class="ActionScriptDefault_Text">byte</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">readUnsignedByte</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptBracket/Brace">)</span>;
+            <span class="ActionScriptDefault_Text">readData</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptBracket/Brace">)</span>;    
+        <span class="ActionScriptBracket/Brace">}</span>
+        <span class="ActionScriptReserved">private</span> <span class="ActionScriptfunction">function</span> <span class="ActionScriptDefault_Text">readData</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptBracket/Brace">)</span>:<span class="ActionScriptReserved">void</span>
+        <span class="ActionScriptBracket/Brace">{</span>
+            <span class="ActionScriptReserved">switch</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptDefault_Text">kind</span><span class="ActionScriptBracket/Brace">)</span>
+            <span class="ActionScriptBracket/Brace">{</span>
+                <span class="ActionScriptReserved">case</span> 0x07:
+                <span class="ActionScriptReserved">case</span> 0x0d:
+                    <span class="ActionScriptDefault_Text">ns</span><span class="ActionScriptOperator">=</span><span class="ActionScriptDefault_Text">readUnsigned30</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptBracket/Brace">)</span>;
+                    <span class="ActionScriptDefault_Text">name</span><span class="ActionScriptOperator">=</span><span class="ActionScriptDefault_Text">readUnsigned30</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptBracket/Brace">)</span>;
+                <span class="ActionScriptReserved">break</span>;
+                <span class="ActionScriptReserved">case</span> 0x0f:
+                <span class="ActionScriptReserved">case</span> 0x10:
+                    <span class="ActionScriptDefault_Text">name</span><span class="ActionScriptOperator">=</span><span class="ActionScriptDefault_Text">readUnsigned30</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptBracket/Brace">)</span>;
+                <span class="ActionScriptReserved">break</span>;
+                <span class="ActionScriptReserved">case</span> 0x11:
+                <span class="ActionScriptReserved">case</span> 0x12:
+                    <span class="ActionScriptDefault_Text">name</span><span class="ActionScriptOperator">=</span>0;
+                <span class="ActionScriptReserved">break</span>;
+                <span class="ActionScriptReserved">case</span> 0x09:
+                <span class="ActionScriptReserved">case</span> 0x0e:
+                    <span class="ActionScriptDefault_Text">name</span><span class="ActionScriptOperator">=</span><span class="ActionScriptDefault_Text">readUnsigned30</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptBracket/Brace">)</span>;
+                    <span class="ActionScriptDefault_Text">ns_set</span><span class="ActionScriptOperator">=</span><span class="ActionScriptDefault_Text">readUnsigned30</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptBracket/Brace">)</span>;
+                <span class="ActionScriptReserved">break</span>;
+                <span class="ActionScriptReserved">case</span> 0x1b:
+                <span class="ActionScriptReserved">case</span> 0x1c:
+                    <span class="ActionScriptDefault_Text">ns_set</span><span class="ActionScriptOperator">=</span><span class="ActionScriptDefault_Text">readUnsigned30</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptBracket/Brace">)</span>;
+                <span class="ActionScriptReserved">break</span>;
+            <span class="ActionScriptBracket/Brace">}</span>
+            <span class="ActionScriptComment">//byte.position+=passLength;
+</span>        <span class="ActionScriptBracket/Brace">}</span>
+        
+    <span class="ActionScriptBracket/Brace">}</span>
+<span class="ActionScriptBracket/Brace">}</span></pre></body>
+</html>

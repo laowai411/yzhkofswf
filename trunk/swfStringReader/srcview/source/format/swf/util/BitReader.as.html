@@ -1,0 +1,91 @@
+<!-- saved from url=(0014)about:internet -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>BitReader.as</title>
+<link rel="stylesheet" type="text/css" href="../../../../SourceStyles.css"/>
+</head>
+
+<body><pre><span class="ActionScriptpackage">package</span> <span class="ActionScriptDefault_Text">format</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">swf</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">util</span>
+<span class="ActionScriptBracket/Brace">{</span>
+    <span class="ActionScriptReserved">import</span> <span class="ActionScriptDefault_Text">flash</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">utils</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">ByteArray</span>;
+    
+    <span class="ActionScriptReserved">public</span> <span class="ActionScriptclass">class</span> <span class="ActionScriptDefault_Text">BitReader</span>
+    <span class="ActionScriptBracket/Brace">{</span>
+        <span class="ActionScriptReserved">private</span> <span class="ActionScriptvar">var</span> <span class="ActionScriptDefault_Text">byte</span>:<span class="ActionScriptDefault_Text">ByteArray</span>;
+        <span class="ActionScriptReserved">private</span> <span class="ActionScriptvar">var</span> <span class="ActionScriptDefault_Text">bitPosition</span>:<span class="ActionScriptDefault_Text">int</span><span class="ActionScriptOperator">=</span>0;
+        <span class="ActionScriptReserved">public</span> <span class="ActionScriptfunction">function</span> <span class="ActionScriptDefault_Text">BitReader</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptDefault_Text">byte</span>:<span class="ActionScriptDefault_Text">ByteArray</span><span class="ActionScriptBracket/Brace">)</span>
+        <span class="ActionScriptBracket/Brace">{</span>
+            <span class="ActionScriptReserved">this</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">byte</span><span class="ActionScriptOperator">=</span><span class="ActionScriptDefault_Text">byte</span>;
+        <span class="ActionScriptBracket/Brace">}</span>
+        <span class="ActionScriptReserved">public</span> <span class="ActionScriptfunction">function</span> <span class="ActionScriptDefault_Text">resetBitPosition</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptBracket/Brace">)</span>:<span class="ActionScriptReserved">void</span>
+        <span class="ActionScriptBracket/Brace">{</span>
+            <span class="ActionScriptDefault_Text">bitPosition</span><span class="ActionScriptOperator">=</span>0;
+        <span class="ActionScriptBracket/Brace">}</span>
+        <span class="ActionScriptASDoc">/**
+         *    从字节数组里读取一无符号的值
+         *     
+         *     当位数不足8的倍数时，会忽略余下的位
+         *     
+         *     例如：1001 1001 0110 1000
+         * 
+         *         使用readUnSignBits(10)后，传入的byte字节数组position将增加2(Math.ceil(10/8)=2)
+         * 
+         * @param num    要读取的位长
+         * @return    
+         * 
+         */</span>        
+        <span class="ActionScriptReserved">public</span> <span class="ActionScriptfunction">function</span> <span class="ActionScriptDefault_Text">readUnSignBits</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptDefault_Text">num</span>:<span class="ActionScriptDefault_Text">uint</span><span class="ActionScriptBracket/Brace">)</span>:<span class="ActionScriptDefault_Text">uint</span>
+        <span class="ActionScriptBracket/Brace">{</span>
+            <span class="ActionScriptvar">var</span> <span class="ActionScriptDefault_Text">lastLength</span>:<span class="ActionScriptDefault_Text">int</span><span class="ActionScriptOperator">=</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptDefault_Text">bitPosition</span><span class="ActionScriptOperator">+</span><span class="ActionScriptDefault_Text">num</span><span class="ActionScriptBracket/Brace">)</span><span class="ActionScriptOperator">%</span>8;
+            <span class="ActionScriptvar">var</span> <span class="ActionScriptDefault_Text">byteLength</span>:<span class="ActionScriptDefault_Text">int</span><span class="ActionScriptOperator">=</span><span class="ActionScriptDefault_Text">Math</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">ceil</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptDefault_Text">bitPosition</span><span class="ActionScriptOperator">+</span><span class="ActionScriptDefault_Text">num</span><span class="ActionScriptBracket/Brace">)</span><span class="ActionScriptOperator">/</span>8<span class="ActionScriptBracket/Brace">)</span>;
+            <span class="ActionScriptvar">var</span> <span class="ActionScriptDefault_Text">whileCount</span>:<span class="ActionScriptDefault_Text">int</span><span class="ActionScriptOperator">=</span><span class="ActionScriptDefault_Text">byteLength</span>;
+            <span class="ActionScriptvar">var</span> <span class="ActionScriptDefault_Text">finalValue</span>:<span class="ActionScriptDefault_Text">uint</span><span class="ActionScriptOperator">=</span>0;
+            
+            <span class="ActionScriptReserved">if</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptDefault_Text">bitPosition</span><span class="ActionScriptOperator">&gt;</span>0<span class="ActionScriptBracket/Brace">)</span>
+                <span class="ActionScriptDefault_Text">byte</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">position</span><span class="ActionScriptOperator">--</span>;
+            
+            
+            <span class="ActionScriptReserved">while</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptDefault_Text">whileCount</span><span class="ActionScriptOperator">&gt;</span>1<span class="ActionScriptBracket/Brace">)</span>
+            <span class="ActionScriptBracket/Brace">{</span>
+                <span class="ActionScriptvar">var</span> <span class="ActionScriptDefault_Text">c_value</span>:<span class="ActionScriptDefault_Text">int</span><span class="ActionScriptOperator">=</span><span class="ActionScriptDefault_Text">byte</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">readUnsignedByte</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptBracket/Brace">)</span>;
+                <span class="ActionScriptDefault_Text">finalValue</span><span class="ActionScriptOperator">+=</span><span class="ActionScriptDefault_Text">getBytesBits</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptDefault_Text">c_value</span><span class="ActionScriptOperator">,</span>8<span class="ActionScriptOperator">,</span><span class="ActionScriptDefault_Text">bitPosition</span><span class="ActionScriptOperator">,</span>8<span class="ActionScriptBracket/Brace">)</span>;
+                <span class="ActionScriptDefault_Text">whileCount</span><span class="ActionScriptOperator">--</span>;
+                <span class="ActionScriptReserved">if</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptDefault_Text">whileCount</span><span class="ActionScriptOperator">&gt;</span>1<span class="ActionScriptBracket/Brace">)</span>
+                <span class="ActionScriptBracket/Brace">{</span>
+                    <span class="ActionScriptDefault_Text">finalValue</span><span class="ActionScriptOperator">=</span><span class="ActionScriptDefault_Text">finalValue</span><span class="ActionScriptOperator">&lt;&lt;</span>8;
+                <span class="ActionScriptBracket/Brace">}</span><span class="ActionScriptReserved">else</span>
+                <span class="ActionScriptBracket/Brace">{</span>
+                    <span class="ActionScriptDefault_Text">finalValue</span><span class="ActionScriptOperator">=</span><span class="ActionScriptDefault_Text">finalValue</span><span class="ActionScriptOperator">&lt;&lt;</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptDefault_Text">lastLength</span><span class="ActionScriptOperator">==</span>0<span class="ActionScriptOperator">?</span>8:<span class="ActionScriptDefault_Text">lastLength</span><span class="ActionScriptBracket/Brace">)</span>;
+                <span class="ActionScriptBracket/Brace">}</span>
+                <span class="ActionScriptDefault_Text">bitPosition</span><span class="ActionScriptOperator">=</span>0;
+            <span class="ActionScriptBracket/Brace">}</span>
+            <span class="ActionScriptReserved">if</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptDefault_Text">lastLength</span><span class="ActionScriptOperator">==</span>0<span class="ActionScriptBracket/Brace">)</span><span class="ActionScriptOperator">&amp;&amp;</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptDefault_Text">num</span><span class="ActionScriptOperator">&gt;</span>0<span class="ActionScriptBracket/Brace">)</span><span class="ActionScriptBracket/Brace">)</span>
+            <span class="ActionScriptBracket/Brace">{</span>
+                <span class="ActionScriptDefault_Text">finalValue</span><span class="ActionScriptOperator">+=</span><span class="ActionScriptDefault_Text">getBytesBits</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptDefault_Text">byte</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">readUnsignedByte</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptBracket/Brace">)</span><span class="ActionScriptOperator">,</span>8<span class="ActionScriptOperator">,</span><span class="ActionScriptDefault_Text">bitPosition</span><span class="ActionScriptOperator">,</span>8<span class="ActionScriptBracket/Brace">)</span>;        
+            <span class="ActionScriptBracket/Brace">}</span><span class="ActionScriptReserved">else</span>
+            <span class="ActionScriptBracket/Brace">{</span>
+                <span class="ActionScriptDefault_Text">finalValue</span><span class="ActionScriptOperator">+=</span><span class="ActionScriptDefault_Text">getBytesBits</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptDefault_Text">byte</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">readUnsignedByte</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptBracket/Brace">)</span><span class="ActionScriptOperator">,</span>8<span class="ActionScriptOperator">,</span>0<span class="ActionScriptOperator">,</span><span class="ActionScriptDefault_Text">lastLength</span><span class="ActionScriptBracket/Brace">)</span>;
+            <span class="ActionScriptBracket/Brace">}</span>
+            <span class="ActionScriptDefault_Text">bitPosition</span><span class="ActionScriptOperator">=</span><span class="ActionScriptDefault_Text">lastLength</span>;
+            <span class="ActionScriptReserved">return</span> <span class="ActionScriptDefault_Text">finalValue</span>;
+        <span class="ActionScriptBracket/Brace">}</span>
+        <span class="ActionScriptASDoc">/**
+         *    截取bytes里的某些位
+         * @param value    输入的字节
+         * @param size    字节的大小（单位：位）
+         * @param start    开始截取的位数
+         * @param end    结束截取的位数
+         * @return     所截取的位值
+         * 
+         */</span>        
+        <span class="ActionScriptReserved">public</span> <span class="ActionScriptReserved">static</span> <span class="ActionScriptfunction">function</span> <span class="ActionScriptDefault_Text">getBytesBits</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptDefault_Text">value</span>:<span class="ActionScriptDefault_Text">int</span><span class="ActionScriptOperator">,</span><span class="ActionScriptDefault_Text">size</span>:<span class="ActionScriptDefault_Text">uint</span><span class="ActionScriptOperator">,</span><span class="ActionScriptDefault_Text">start</span>:<span class="ActionScriptDefault_Text">int</span><span class="ActionScriptOperator">,</span><span class="ActionScriptDefault_Text">end</span>:<span class="ActionScriptDefault_Text">int</span><span class="ActionScriptBracket/Brace">)</span>:<span class="ActionScriptDefault_Text">int</span>
+        <span class="ActionScriptBracket/Brace">{</span>
+            <span class="ActionScriptvar">var</span> <span class="ActionScriptDefault_Text">mask</span>:<span class="ActionScriptDefault_Text">int</span><span class="ActionScriptOperator">=</span><span class="ActionScriptBracket/Brace">(</span>1<span class="ActionScriptOperator">&lt;&lt;</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptDefault_Text">end</span><span class="ActionScriptOperator">-</span><span class="ActionScriptDefault_Text">start</span><span class="ActionScriptBracket/Brace">)</span><span class="ActionScriptBracket/Brace">)</span><span class="ActionScriptOperator">-</span>1;
+            <span class="ActionScriptReserved">return</span> <span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptDefault_Text">value</span><span class="ActionScriptOperator">&gt;&gt;</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptDefault_Text">size</span><span class="ActionScriptOperator">-</span><span class="ActionScriptDefault_Text">end</span><span class="ActionScriptBracket/Brace">)</span><span class="ActionScriptBracket/Brace">)</span><span class="ActionScriptOperator">&amp;</span><span class="ActionScriptDefault_Text">mask</span>;
+        <span class="ActionScriptBracket/Brace">}</span>
+
+    <span class="ActionScriptBracket/Brace">}</span>
+<span class="ActionScriptBracket/Brace">}</span></pre></body>
+</html>

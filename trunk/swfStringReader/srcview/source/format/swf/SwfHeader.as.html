@@ -1,0 +1,91 @@
+<!-- saved from url=(0014)about:internet -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>SwfHeader.as</title>
+<link rel="stylesheet" type="text/css" href="../../../SourceStyles.css"/>
+</head>
+
+<body><pre><span class="ActionScriptpackage">package</span> <span class="ActionScriptDefault_Text">format</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">swf</span>
+<span class="ActionScriptBracket/Brace">{</span>
+    <span class="ActionScriptReserved">import</span> <span class="ActionScriptDefault_Text">flash</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">geom</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">Rectangle</span>;
+    <span class="ActionScriptReserved">import</span> <span class="ActionScriptDefault_Text">flash</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">utils</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">ByteArray</span>;
+    <span class="ActionScriptReserved">import</span> <span class="ActionScriptDefault_Text">flash</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">utils</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">Endian</span>;
+    
+    <span class="ActionScriptReserved">import</span> <span class="ActionScriptDefault_Text">format</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">swf</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">util</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">BitReader</span>;
+    
+    <span class="ActionScriptReserved">public</span> <span class="ActionScriptclass">class</span> <span class="ActionScriptDefault_Text">SwfHeader</span>
+    <span class="ActionScriptBracket/Brace">{</span>
+        <span class="ActionScriptReserved">public</span> <span class="ActionScriptvar">var</span> <span class="ActionScriptDefault_Text">format</span>:<span class="ActionScriptDefault_Text">String</span>;
+        <span class="ActionScriptReserved">public</span> <span class="ActionScriptvar">var</span> <span class="ActionScriptDefault_Text">playerVersion</span>:<span class="ActionScriptDefault_Text">int</span>;
+        <span class="ActionScriptReserved">public</span> <span class="ActionScriptvar">var</span> <span class="ActionScriptDefault_Text">sizeAfterUncompress</span>:<span class="ActionScriptDefault_Text">uint</span>;
+        <span class="ActionScriptReserved">public</span> <span class="ActionScriptvar">var</span> <span class="ActionScriptDefault_Text">frameRate</span>:<span class="ActionScriptDefault_Text">uint</span>;
+        <span class="ActionScriptReserved">public</span> <span class="ActionScriptvar">var</span> <span class="ActionScriptDefault_Text">frameSize</span>:<span class="ActionScriptDefault_Text">Rectangle</span>;
+        <span class="ActionScriptReserved">public</span> <span class="ActionScriptvar">var</span> <span class="ActionScriptDefault_Text">frameCount</span>:<span class="ActionScriptDefault_Text">uint</span>;
+        <span class="ActionScriptReserved">public</span> <span class="ActionScriptvar">var</span> <span class="ActionScriptDefault_Text">headerLength</span>:<span class="ActionScriptDefault_Text">uint</span>;
+        
+        <span class="ActionScriptReserved">private</span> <span class="ActionScriptvar">var</span> <span class="ActionScriptDefault_Text">byte</span>:<span class="ActionScriptDefault_Text">ByteArray</span>;
+        <span class="ActionScriptReserved">private</span> <span class="ActionScriptvar">var</span> <span class="ActionScriptDefault_Text">bitReader</span>:<span class="ActionScriptDefault_Text">BitReader</span>;
+        <span class="ActionScriptReserved">private</span> <span class="ActionScriptvar">var</span> <span class="ActionScriptDefault_Text">_uncompressBytes</span>:<span class="ActionScriptDefault_Text">ByteArray</span><span class="ActionScriptOperator">=</span><span class="ActionScriptReserved">new</span> <span class="ActionScriptDefault_Text">ByteArray</span>;
+        <span class="ActionScriptASDoc">/**
+         *    传入byte字节数组，注意position的位置与endian(Endian.LITTLE_ENDIAN); 
+         * @param byte
+         * 
+         */</span>        
+        <span class="ActionScriptReserved">public</span> <span class="ActionScriptfunction">function</span> <span class="ActionScriptDefault_Text">SwfHeader</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptDefault_Text">byte</span>:<span class="ActionScriptDefault_Text">ByteArray</span><span class="ActionScriptBracket/Brace">)</span>
+        <span class="ActionScriptBracket/Brace">{</span>
+            <span class="ActionScriptReserved">this</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">byte</span><span class="ActionScriptOperator">=</span><span class="ActionScriptDefault_Text">byte</span>;
+            <span class="ActionScriptDefault_Text">read</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptBracket/Brace">)</span>;
+        <span class="ActionScriptBracket/Brace">}</span>
+        <span class="ActionScriptReserved">private</span> <span class="ActionScriptfunction">function</span> <span class="ActionScriptDefault_Text">read</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptBracket/Brace">)</span>:<span class="ActionScriptReserved">void</span>
+        <span class="ActionScriptBracket/Brace">{</span>
+            <span class="ActionScriptDefault_Text">format</span><span class="ActionScriptOperator">=</span><span class="ActionScriptDefault_Text">byte</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">readUTFBytes</span><span class="ActionScriptBracket/Brace">(</span>3<span class="ActionScriptBracket/Brace">)</span>;
+            <span class="ActionScriptDefault_Text">playerVersion</span><span class="ActionScriptOperator">=</span><span class="ActionScriptDefault_Text">byte</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">readUnsignedByte</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptBracket/Brace">)</span>;
+            <span class="ActionScriptDefault_Text">sizeAfterUncompress</span><span class="ActionScriptOperator">=</span><span class="ActionScriptDefault_Text">byte</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">readUnsignedInt</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptBracket/Brace">)</span>;
+            <span class="ActionScriptDefault_Text">byte</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">readBytes</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptDefault_Text">_uncompressBytes</span><span class="ActionScriptBracket/Brace">)</span>;
+            <span class="ActionScriptDefault_Text">_uncompressBytes</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">endian</span><span class="ActionScriptOperator">=</span><span class="ActionScriptDefault_Text">Endian</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">LITTLE_ENDIAN</span>;
+            <span class="ActionScriptReserved">if</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptDefault_Text">format</span><span class="ActionScriptOperator">==</span><span class="ActionScriptString">"CWS"</span><span class="ActionScriptBracket/Brace">)</span>
+            <span class="ActionScriptBracket/Brace">{</span>
+                <span class="ActionScriptDefault_Text">_uncompressBytes</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">uncompress</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptBracket/Brace">)</span>;
+            <span class="ActionScriptBracket/Brace">}</span><span class="ActionScriptReserved">else</span> <span class="ActionScriptReserved">if</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptDefault_Text">format</span><span class="ActionScriptOperator">!=</span><span class="ActionScriptString">"FWS"</span><span class="ActionScriptBracket/Brace">)</span>            <span class="ActionScriptBracket/Brace">{</span>
+                <span class="ActionScriptReserved">throw</span> <span class="ActionScriptReserved">new</span> <span class="ActionScriptDefault_Text">Error</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptString">"不是swf文件"</span><span class="ActionScriptBracket/Brace">)</span>;
+            <span class="ActionScriptBracket/Brace">}</span>
+            
+            <span class="ActionScriptDefault_Text">bitReader</span><span class="ActionScriptOperator">=</span><span class="ActionScriptReserved">new</span> <span class="ActionScriptDefault_Text">BitReader</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptDefault_Text">_uncompressBytes</span><span class="ActionScriptBracket/Brace">)</span>;
+            <span class="ActionScriptvar">var</span> <span class="ActionScriptDefault_Text">sb_length</span>:<span class="ActionScriptDefault_Text">uint</span><span class="ActionScriptOperator">=</span><span class="ActionScriptDefault_Text">bitReader</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">readUnSignBits</span><span class="ActionScriptBracket/Brace">(</span>5<span class="ActionScriptBracket/Brace">)</span>;
+            <span class="ActionScriptASDoc">/**
+             *    原单位为磅，所以除以20 
+             */</span>            
+            <span class="ActionScriptvar">var</span> <span class="ActionScriptDefault_Text">Xmin</span>:<span class="ActionScriptDefault_Text">int</span><span class="ActionScriptOperator">=</span><span class="ActionScriptDefault_Text">bitReader</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">readUnSignBits</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptDefault_Text">sb_length</span><span class="ActionScriptBracket/Brace">)</span><span class="ActionScriptOperator">/</span>20;
+            <span class="ActionScriptvar">var</span> <span class="ActionScriptDefault_Text">Xmax</span>:<span class="ActionScriptDefault_Text">int</span><span class="ActionScriptOperator">=</span><span class="ActionScriptDefault_Text">bitReader</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">readUnSignBits</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptDefault_Text">sb_length</span><span class="ActionScriptBracket/Brace">)</span><span class="ActionScriptOperator">/</span>20;
+            <span class="ActionScriptvar">var</span> <span class="ActionScriptDefault_Text">Ymin</span>:<span class="ActionScriptDefault_Text">int</span><span class="ActionScriptOperator">=</span><span class="ActionScriptDefault_Text">bitReader</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">readUnSignBits</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptDefault_Text">sb_length</span><span class="ActionScriptBracket/Brace">)</span><span class="ActionScriptOperator">/</span>20;
+            <span class="ActionScriptvar">var</span> <span class="ActionScriptDefault_Text">Ymax</span>:<span class="ActionScriptDefault_Text">int</span><span class="ActionScriptOperator">=</span><span class="ActionScriptDefault_Text">bitReader</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">readUnSignBits</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptDefault_Text">sb_length</span><span class="ActionScriptBracket/Brace">)</span><span class="ActionScriptOperator">/</span>20;
+            
+            <span class="ActionScriptDefault_Text">frameSize</span><span class="ActionScriptOperator">=</span><span class="ActionScriptReserved">new</span> <span class="ActionScriptDefault_Text">Rectangle</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptDefault_Text">Xmax</span><span class="ActionScriptOperator">,</span><span class="ActionScriptDefault_Text">Ymin</span><span class="ActionScriptOperator">,</span><span class="ActionScriptDefault_Text">Xmax</span><span class="ActionScriptOperator">-</span><span class="ActionScriptDefault_Text">Xmin</span><span class="ActionScriptOperator">,</span><span class="ActionScriptDefault_Text">Ymax</span><span class="ActionScriptOperator">-</span><span class="ActionScriptDefault_Text">Ymin</span><span class="ActionScriptBracket/Brace">)</span>;
+            
+            <span class="ActionScriptDefault_Text">frameRate</span><span class="ActionScriptOperator">=</span><span class="ActionScriptDefault_Text">_uncompressBytes</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">readUnsignedShort</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptBracket/Brace">)</span><span class="ActionScriptOperator">/</span>256;<span class="ActionScriptComment">//此处似乎为BigEndian
+</span>            <span class="ActionScriptDefault_Text">frameCount</span><span class="ActionScriptOperator">=</span><span class="ActionScriptDefault_Text">_uncompressBytes</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">readUnsignedShort</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptBracket/Brace">)</span>;
+            <span class="ActionScriptASDoc">/**
+            *    未压缩的为头8字节 
+            */</span>            
+            <span class="ActionScriptDefault_Text">headerLength</span><span class="ActionScriptOperator">=</span>8<span class="ActionScriptOperator">+</span><span class="ActionScriptDefault_Text">_uncompressBytes</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">position</span>;
+        <span class="ActionScriptBracket/Brace">}</span>
+        <span class="ActionScriptReserved">public</span> <span class="ActionScriptfunction">function</span> <span class="ActionScriptReserved">get</span> <span class="ActionScriptDefault_Text">tagBytes</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptBracket/Brace">)</span>:<span class="ActionScriptDefault_Text">ByteArray</span>
+        <span class="ActionScriptBracket/Brace">{</span>
+            <span class="ActionScriptDefault_Text">_uncompressBytes</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">position</span><span class="ActionScriptOperator">=</span><span class="ActionScriptDefault_Text">headerLength</span><span class="ActionScriptOperator">-</span>8;
+            <span class="ActionScriptReserved">return</span> <span class="ActionScriptDefault_Text">_uncompressBytes</span>;
+        <span class="ActionScriptBracket/Brace">}</span>
+        <span class="ActionScriptReserved">public</span> <span class="ActionScriptfunction">function</span> <span class="ActionScriptReserved">get</span> <span class="ActionScriptDefault_Text">uncompressBytes</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptBracket/Brace">)</span>:<span class="ActionScriptDefault_Text">ByteArray</span>
+        <span class="ActionScriptBracket/Brace">{</span>
+            <span class="ActionScriptDefault_Text">_uncompressBytes</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">position</span><span class="ActionScriptOperator">=</span>0;
+            <span class="ActionScriptReserved">return</span> <span class="ActionScriptDefault_Text">_uncompressBytes</span>;    
+        <span class="ActionScriptBracket/Brace">}</span>
+        <span class="ActionScriptReserved">public</span> <span class="ActionScriptfunction">function</span> <span class="ActionScriptReserved">get</span> <span class="ActionScriptDefault_Text">headerUncompressBytes</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptBracket/Brace">)</span>:<span class="ActionScriptDefault_Text">ByteArray</span>
+        <span class="ActionScriptBracket/Brace">{</span>
+            <span class="ActionScriptReserved">return</span> <span class="ActionScriptDefault_Text">BytesUtils</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">snapShotBytes</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptDefault_Text">byte</span><span class="ActionScriptOperator">,</span>8<span class="ActionScriptOperator">,</span>0<span class="ActionScriptBracket/Brace">)</span>;
+        <span class="ActionScriptBracket/Brace">}</span>
+
+    <span class="ActionScriptBracket/Brace">}</span>
+<span class="ActionScriptBracket/Brace">}</span></pre></body>
+</html>

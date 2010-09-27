@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index>
+	<title>swfStringReader 的源代码</title>
+	<nodes>
+		<node label="html-template">
+			<node label="history">
+				<node icon="cssIcon" label="history.css" url="source/html-template/history/history.css.html"/>
+				<node label="history.js" url="source/html-template/history/history.js.txt"/>
+				<node icon="htmlIcon" label="historyFrame.html" url="source/html-template/history/historyFrame.html"/>
+			</node>
+			<node icon="htmlIcon" label="index.template.html" url="source/html-template/index.template.html"/>
+			<node icon="swfIcon" label="playerProductInstall.swf" url="source/html-template/playerProductInstall.swf"/>
+			<node label="swfobject.js" url="source/html-template/swfobject.js.txt"/>
+		</node>
+		<node label="libs">
+		</node>
+		<node label="src">
+			<node icon="packageIcon" label="format.swf" expanded="true">
+				<node icon="actionScriptIcon" label="ABCFile.as" url="source/format/swf/ABCFile.as.html"/>
+				<node icon="actionScriptIcon" label="ABCFileStructs.as" url="source/format/swf/ABCFileStructs.as.html"/>
+				<node icon="actionScriptIcon" label="BytesUtils.as" url="source/format/swf/BytesUtils.as.html"/>
+				<node icon="actionScriptIcon" label="Class_info.as" url="source/format/swf/Class_info.as.html"/>
+				<node icon="actionScriptIcon" label="Cpool_info.as" url="source/format/swf/Cpool_info.as.html"/>
+				<node icon="actionScriptIcon" label="DoABC.as" url="source/format/swf/DoABC.as.html"/>
+				<node icon="actionScriptIcon" label="Exception_info.as" url="source/format/swf/Exception_info.as.html"/>
+				<node icon="actionScriptIcon" label="Instance_info.as" url="source/format/swf/Instance_info.as.html"/>
+				<node icon="actionScriptIcon" label="Item_info.as" url="source/format/swf/Item_info.as.html"/>
+				<node icon="actionScriptIcon" label="Metadata_info.as" url="source/format/swf/Metadata_info.as.html"/>
+				<node icon="actionScriptIcon" label="Method_body_info.as" url="source/format/swf/Method_body_info.as.html"/>
+				<node icon="actionScriptIcon" label="Method_info.as" url="source/format/swf/Method_info.as.html"/>
+				<node icon="actionScriptIcon" label="Multiname_info.as" url="source/format/swf/Multiname_info.as.html"/>
+				<node icon="actionScriptIcon" label="Namespace_info.as" url="source/format/swf/Namespace_info.as.html"/>
+				<node icon="actionScriptIcon" label="Ns_set_info.as" url="source/format/swf/Ns_set_info.as.html"/>
+				<node icon="actionScriptIcon" label="Option_detail.as" url="source/format/swf/Option_detail.as.html"/>
+				<node icon="actionScriptIcon" label="Option_info.as" url="source/format/swf/Option_info.as.html"/>
+				<node icon="actionScriptIcon" label="Param_info.as" url="source/format/swf/Param_info.as.html"/>
+				<node icon="actionScriptIcon" label="Reader.as" url="source/format/swf/Reader.as.html"/>
+				<node icon="actionScriptIcon" label="Script_info.as" url="source/format/swf/Script_info.as.html"/>
+				<node icon="actionScriptIcon" label="String_info.as" url="source/format/swf/String_info.as.html"/>
+				<node icon="actionScriptIcon" label="SwfFile.as" url="source/format/swf/SwfFile.as.html"/>
+				<node icon="actionScriptIcon" label="SwfHeader.as" url="source/format/swf/SwfHeader.as.html"/>
+				<node icon="actionScriptIcon" label="SwfTag.as" url="source/format/swf/SwfTag.as.html"/>
+				<node icon="actionScriptIcon" label="SwfTagReader.as" url="source/format/swf/SwfTagReader.as.html"/>
+				<node icon="actionScriptIcon" label="TagReader.as" url="source/format/swf/TagReader.as.html"/>
+				<node icon="actionScriptIcon" label="Trait_class.as" url="source/format/swf/Trait_class.as.html"/>
+				<node icon="actionScriptIcon" label="Trait_function.as" url="source/format/swf/Trait_function.as.html"/>
+				<node icon="actionScriptIcon" label="Trait_method.as" url="source/format/swf/Trait_method.as.html"/>
+				<node icon="actionScriptIcon" label="Trait_Slot.as" url="source/format/swf/Trait_Slot.as.html"/>
+				<node icon="actionScriptIcon" label="Traits_info.as" url="source/format/swf/Traits_info.as.html"/>
+			</node>
+			<node icon="packageIcon" label="format.swf.tag" expanded="true">
+				<node icon="actionScriptIcon" label="TagOfSwf.as" url="source/format/swf/tag/TagOfSwf.as.html"/>
+			</node>
+			<node icon="packageIcon" label="format.swf.util" expanded="true">
+				<node icon="actionScriptIcon" label="BitReader.as" url="source/format/swf/util/BitReader.as.html"/>
+			</node>
+			<node icon="packageIcon" label="format.swf.writer" expanded="true">
+				<node icon="actionScriptIcon" label="SwfWriter.as" url="source/format/swf/writer/SwfWriter.as.html"/>
+			</node>
+			<node icon="mxmlAppIcon" selected="true" label="swfStringReader.mxml" url="source/swfStringReader.mxml.html"/>
+		</node>
+	</nodes>
+	<zipfile label="下载源代码（ZIP，38 KB）" url="swfStringReader.zip">
+	</zipfile>
+	<sdklink label="下载 Flex SDK" url="http://www.adobe.com/go/flex4_sdk_download_cn_zh_CN">
+	</sdklink>
+</index>
