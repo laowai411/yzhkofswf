@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<config>
+<config hide = "false">
 	<import_namespace>flash.utils</import_namespace>
 	<import_namespace>flash.display</import_namespace>
 	<import_namespace>flash.events</import_namespace>
