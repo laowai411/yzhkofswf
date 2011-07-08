@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+    <SkillInfo>
+        <SkillInfo SkillIdx="1" Name="突击" Type="2" Attack="90" Radius="0" Select="3" Count="1" State="0" HP="0" Icon="icon/skill/5_1.png" Description="冲向敌方，攻击敌方最前沿的两个敌人，对每个目标造成90%的伤害。" />
+        <SkillInfo SkillIdx="2" Name="乱舞" Type="2" Attack="80" Radius="0" Select="3" Count="3" State="0" HP="0" Icon="icon/skill/5_2.png" Description="冲入敌阵，对最前沿的一个敌人进行连击，砍3刀，每次攻击造成80%伤害。" />
+        <SkillInfo SkillIdx="3" Name="重劈" Type="2" Attack="150" Radius="0" Select="3" Count="1" State="0" HP="0" Icon="icon/skill/5_3.png" Description="攻击最前沿的一个敌人，对敌人造成150%的伤害。" />
+        <SkillInfo SkillIdx="4" Name="格档" Type="2" Attack="0" Radius="0" Select="5" Count="1" State="2" HP="0" Icon="icon/skill/5_4.png" Description="在武器中注入真气，形成气盾，下会合无敌一回合。" />
+        <SkillInfo SkillIdx="5" Name="影杀" Type="2" Attack="100" Radius="0" Select="1" Count="4" State="0" HP="0" Icon="icon/skill/5_5.png" Description="幻化成阴影，潜入敌方背后，对单个敌人造成400%的伤害。" />
+        <SkillInfo SkillIdx="6" Name="连珠箭" Type="2" Attack="90" Radius="0" Select="1" Count="2" State="0" HP="0" Icon="icon/skill/2_1.png" Description="一次射出两支箭，攻击同一个敌人，每支箭造成90%的伤害。" />
+        <SkillInfo SkillIdx="24" Name="旋风" Type="2" Attack="150" Radius="50" Select="2" Count="3" State="0" HP="0" Icon="icon/skill/1_4.png" Description="挥动巨锤，形成一股飓风，对一定范围内的敌人造成150%的伤害。" />
+        <SkillInfo SkillIdx="23" Name="憾地" Type="2" Attack="120" Radius="80" Select="2" Count="3" State="1" HP="0" Icon="icon/skill/1_3.png" Description="攻击敌阵一片区域，造成120%的伤害，击晕敌人，眩晕敌人下回合无法攻击。" />
+        <SkillInfo SkillIdx="22" Name="击飞" Type="2" Attack="120" Radius="0" Select="3" Count="1" State="0" HP="0" Icon="icon/skill/1_2.png" Description="用锤子将一个敌人击飞，造成120%伤害。" />
+        <SkillInfo SkillIdx="21" Name="重击" Type="2" Attack="100" Radius="0" Select="3" Count="1" State="1" HP="0" Icon="icon/skill/1_1.png" Description="巨锤砸击一个敌人，造成100%伤害，并击晕敌人，该目标下回合无法攻击。" />
+        <SkillInfo SkillIdx="20" Name="致死" Type="2" Attack="400" Radius="0" Select="1" Count="1" State="0" HP="0" Icon="icon/skill/3_5.png" Description="不顾自身安危，冲入敌阵，跃起将长矛刺入一个敌人身体，造成400%的伤害。" />
+        <SkillInfo SkillIdx="19" Name="横贯" Type="2" Attack="120" Radius="0" Select="4" Count="7" State="0" HP="0" Icon="icon/skill/3_4.png" Description="将全身劲力灌注与长矛之上，直线掷出，横穿所有敌人，对每个敌人造成120%的伤害。" />
+        <SkillInfo SkillIdx="18" Name="暴怒" Type="2" Attack="0" Radius="0" Select="5" Count="1" State="4" HP="0" Icon="icon/skill/3_3.png" Description="放弃一次攻击，下次攻击伤害加倍。" />
+        <SkillInfo SkillIdx="17" Name="愤怒" Type="2" Attack="150" Radius="0" Select="1" Count="1" State="0" HP="0" Icon="icon/skill/3_2.png" Description="将怒气注入愤怒之矛，投掷出长矛对单个敌人造成150%的伤害。" />
+        <SkillInfo SkillIdx="16" Name="穿刺" Type="2" Attack="120" Radius="0" Select="1" Count="1" State="0" HP="0" Icon="icon/skill/3_1.png" Description="投出长矛，攻击单个敌人，造成120%的伤害。" />
+        <SkillInfo SkillIdx="15" Name="冰火融合" Type="2" Attack="100" Radius="0" Select="4" Count="7" State="0" HP="0" Icon="icon/skill/4_5.png" Description="将冰与火完全结合在一起，从天攻击敌方全体，对每个敌人造成100%的伤害" />
+        <SkillInfo SkillIdx="14" Name="重生" Type="2" Attack="50" Radius="0" Select="4" Count="7" State="0" HP="1" Icon="icon/skill/4_4.png" Description="吸取大自然生命精华，对全体队友进行大量治疗。" />
+        <SkillInfo SkillIdx="13" Name="落冰" Type="2" Attack="90" Radius="0" Select="4" Count="7" State="0" HP="0" Icon="icon/skill/4_3.png" Description="凝结天空中的极寒之气，化作落冰对敌人全体造成90%的伤害" />
+        <SkillInfo SkillIdx="12" Name="恢复" Type="2" Attack="25" Radius="0" Select="4" Count="7" State="0" HP="1" Icon="icon/skill/4_2.png" Description="领悟精灵的力量，对全体队友进行治疗。" />
+        <SkillInfo SkillIdx="11" Name="天火" Type="2" Attack="70" Radius="0" Select="4" Count="7" State="0" HP="0" Icon="icon/skill/4_1.png" Description="召唤火神力量，降落陨石攻击敌方全体，对每个敌人造成70%的伤害。" />
+        <SkillInfo SkillIdx="10" Name="箭雨" Type="2" Attack="150" Radius="0" Select="2" Count="5" State="0" HP="0" Icon="icon/skill/2_5.png" Description="一次射出五支箭，攻击五个不同的目标，每支箭造成150%的伤害。" />
+        <SkillInfo SkillIdx="9" Name="分裂箭" Type="2" Attack="100" Radius="0" Select="2" Count="3" State="0" HP="0" Icon="icon/skill/2_4.png" Description="一次射出三支箭，攻击三个不同的目标，每支箭造成100%的伤害。" />
+        <SkillInfo SkillIdx="8" Name="强连珠箭" Type="2" Attack="100" Radius="0" Select="1" Count="3" State="0" HP="0" Icon="icon/skill/2_3.png" Description="一次射出三支箭，攻击同一个敌人，每支箭造成100%的伤害。" />
+        <SkillInfo SkillIdx="7" Name="分叉箭" Type="2" Attack="85" Radius="0" Select="2" Count="2" State="0" HP="0" Icon="icon/skill/2_2.png" Description="一次射出两支箭，攻击两个不同的目标，每支箭造成85%的伤害" />
+        <SkillInfo SkillIdx="40" Name="锤飞攻" Type="1" Attack="110" Radius="0" Select="1" Count="1" State="0" HP="0" Icon="" Description="锤飞攻" />
+        <SkillInfo SkillIdx="29" Name="矛普攻" Type="1" Attack="100" Radius="0" Select="1" Count="1" State="0" HP="0" Icon="" Description="矛普攻" />
+        <SkillInfo SkillIdx="28" Name="法杖普攻" Type="1" Attack="90" Radius="0" Select="1" Count="1" State="0" HP="0" Icon="" Description="法杖普攻" />
+        <SkillInfo SkillIdx="27" Name="弓普攻" Type="1" Attack="90" Radius="0" Select="1" Count="1" State="0" HP="0" Icon="" Description="弓普攻" />
+        <SkillInfo SkillIdx="26" Name="鱼刺普攻" Type="1" Attack="100" Radius="0" Select="3" Count="1" State="0" HP="0" Icon="" Description="鱼刺普攻" />
+        <SkillInfo SkillIdx="25" Name="神力" Type="2" Attack="150" Radius="0" Select="4" Count="7" State="0" HP="0" Icon="icon/skill/1_5.png" Description="将自身真气与巨锤合为一体，对敌人全体造成150%的伤害。" />
+        <SkillInfo SkillIdx="39" Name="矛飞攻" Type="1" Attack="100" Radius="0" Select="1" Count="1" State="0" HP="0" Icon="" Description="矛飞攻" />
+        <SkillInfo SkillIdx="38" Name="法杖飞攻" Type="1" Attack="90" Radius="0" Select="1" Count="1" State="0" HP="0" Icon="" Description="法杖飞攻" />
+        <SkillInfo SkillIdx="37" Name="弓飞攻" Type="1" Attack="90" Radius="0" Select="1" Count="1" State="0" HP="0" Icon="" Description="弓飞攻" />
+        <SkillInfo SkillIdx="36" Name="鱼刺飞攻" Type="1" Attack="100" Radius="0" Select="1" Count="1" State="0" HP="0" Icon="" Description="鱼刺飞攻" />
+        <SkillInfo SkillIdx="35" Name="锤跳攻" Type="1" Attack="110" Radius="0" Select="1" Count="1" State="0" HP="0" Icon="" Description="锤跳攻" />
+        <SkillInfo SkillIdx="34" Name="矛跳攻" Type="1" Attack="100" Radius="0" Select="1" Count="1" State="0" HP="0" Icon="" Description="矛跳攻" />
+        <SkillInfo SkillIdx="33" Name="法杖跳攻" Type="1" Attack="90" Radius="0" Select="1" Count="1" State="0" HP="0" Icon="" Description="法杖跳攻" />
+        <SkillInfo SkillIdx="32" Name="弓跳攻" Type="1" Attack="90" Radius="0" Select="1" Count="1" State="0" HP="0" Icon="" Description="弓跳攻" />
+        <SkillInfo SkillIdx="31" Name="鱼刺跳攻" Type="1" Attack="100" Radius="0" Select="1" Count="1" State="0" HP="0" Icon="" Description="鱼刺跳攻" />
+        <SkillInfo SkillIdx="30" Name="锤普攻" Type="1" Attack="110" Radius="0" Select="3" Count="1" State="0" HP="0" Icon=" " Description="锤普攻" />
+        <SkillInfo SkillIdx="175" Name="厚皮" Type="2" Attack="0" Radius="0" Select="5" Count="1" State="2" HP="0" Icon="" Description="下回合无敌" />
+        <SkillInfo SkillIdx="174" Name="巫毒" Type="2" Attack="120" Radius="0" Select="4" Count="7" State="0" HP="0" Icon="" Description="全体伤害" />
+        <SkillInfo SkillIdx="173" Name="末日启示" Type="2" Attack="150" Radius="0" Select="4" Count="7" State="0" HP="0" Icon="" Description="全体伤害" />
+        <SkillInfo SkillIdx="172" Name="九日之魂" Type="2" Attack="120" Radius="0" Select="4" Count="7" State="0" HP="0" Icon="" Description="全体伤害" />
+        <SkillInfo SkillIdx="171" Name="高压电" Type="2" Attack="150" Radius="0" Select="4" Count="7" State="0" HP="0" Icon="" Description="全体伤害" />
+        <SkillInfo SkillIdx="170" Name="巨臀LV2" Type="2" Attack="110" Radius="0" Select="4" Count="7" State="0" HP="0" Icon="" Description="全体伤害" />
+        <SkillInfo SkillIdx="169" Name="巨臀LV1" Type="2" Attack="100" Radius="0" Select="4" Count="7" State="0" HP="0" Icon="" Description="全体伤害" />
+        <SkillInfo SkillIdx="168" Name="毒蛊LV2" Type="2" Attack="150" Radius="50" Select="2" Count="3" State="0" HP="0" Icon="" Description="范围伤害" />
+        <SkillInfo SkillIdx="167" Name="毒蛊LV1" Type="2" Attack="130" Radius="50" Select="2" Count="3" State="0" HP="0" Icon="" Description="范围伤害" />
+        <SkillInfo SkillIdx="166" Name="神圣护盾" Type="2" Attack="0" Radius="0" Select="5" Count="1" State="2" HP="0" Icon="" Description="下回合无敌" />
+        <SkillInfo SkillIdx="165" Name="神圣护盾" Type="2" Attack="0" Radius="0" Select="5" Count="1" State="2" HP="0" Icon="" Description="下回合无敌" />
+        <SkillInfo SkillIdx="164" Name="寒冰箭LV2" Type="2" Attack="90" Radius="80" Select="2" Count="3" State="0" HP="0" Icon="" Description="范围伤害" />
+        <SkillInfo SkillIdx="163" Name="寒冰箭LV1" Type="2" Attack="80" Radius="80" Select="2" Count="3" State="0" HP="0" Icon="" Description="范围伤害" />
+        <SkillInfo SkillIdx="162" Name="强力水炮LV2" Type="2" Attack="100" Radius="0" Select="4" Count="7" State="0" HP="0" Icon="" Description="全体伤害" />
+        <SkillInfo SkillIdx="161" Name="强力水炮LV1" Type="2" Attack="90" Radius="0" Select="4" Count="7" State="0" HP="0" Icon="" Description="全体伤害" />
+        <SkillInfo SkillIdx="160" Name="脚踏LV3" Type="2" Attack="110" Radius="30" Select="2" Count="3" State="0" HP="0" Icon="" Description="范围伤害" />
+        <SkillInfo SkillIdx="159" Name="脚踏LV2" Type="2" Attack="100" Radius="30" Select="2" Count="3" State="0" HP="0" Icon="" Description="范围伤害" />
+        <SkillInfo SkillIdx="158" Name="脚踏LV1" Type="2" Attack="90" Radius="30" Select="2" Count="3" State="0" HP="0" Icon="" Description="范围伤害" />
+        <SkillInfo SkillIdx="157" Name="剧毒之矛LV3" Type="2" Attack="150" Radius="0" Select="4" Count="7" State="0" HP="0" Icon="" Description="单体伤害，3支矛" />
+        <SkillInfo SkillIdx="156" Name="剧毒之矛LV2" Type="2" Attack="120" Radius="0" Select="4" Count="7" State="0" HP="0" Icon="" Description="单体伤害，2支矛" />
+        <SkillInfo SkillIdx="155" Name="剧毒之矛LV1" Type="2" Attack="100" Radius="0" Select="4" Count="7" State="0" HP="0" Icon="" Description="单体伤害，1支矛" />
+        <SkillInfo SkillIdx="154" Name="神圣之光LV3" Type="2" Attack="80" Radius="0" Select="4" Count="7" State="0" HP="0" Icon="" Description="全体伤害" />
+        <SkillInfo SkillIdx="153" Name="神圣之光LV2" Type="2" Attack="80" Radius="0" Select="4" Count="7" State="0" HP="0" Icon="" Description="全体伤害" />
+        <SkillInfo SkillIdx="152" Name="神圣之光LV2" Type="2" Attack="80" Radius="0" Select="4" Count="7" State="0" HP="0" Icon="" Description="全体伤害" />
+        <SkillInfo SkillIdx="151" Name="空弦LV3" Type="2" Attack="90" Radius="0" Select="4" Count="7" State="0" HP="0" Icon="" Description="全体伤害" />
+        <SkillInfo SkillIdx="150" Name="空弦LV2" Type="2" Attack="80" Radius="0" Select="4" Count="7" State="0" HP="0" Icon="" Description="全体伤害" />
+        <SkillInfo SkillIdx="149" Name="空弦LV1" Type="2" Attack="70" Radius="0" Select="4" Count="7" State="0" HP="0" Icon="" Description="全体伤害" />
+        <SkillInfo SkillIdx="148" Name="甩尾LV3" Type="2" Attack="100" Radius="50" Select="2" Count="3" State="0" HP="0" Icon="" Description="范围伤害" />
+        <SkillInfo SkillIdx="147" Name="甩尾LV2" Type="2" Attack="100" Radius="50" Select="2" Count="3" State="0" HP="0" Icon="" Description="范围伤害" />
+        <SkillInfo SkillIdx="146" Name="甩尾LV1" Type="2" Attack="100" Radius="50" Select="2" Count="3" State="0" HP="0" Icon="" Description="范围伤害" />
+        <SkillInfo SkillIdx="145" Name="剑冢" Type="2" Attack="120" Radius="0" Select="4" Count="7" State="0" HP="0" Icon="" Description="全体伤害" />
+        <SkillInfo SkillIdx="144" Name="毒奶诅咒" Type="2" Attack="100" Radius="0" Select="4" Count="7" State="0" HP="0" Icon="" Description="全体伤害" />
+        <SkillInfo SkillIdx="143" Name="火牛阵" Type="2" Attack="110" Radius="0" Select="4" Count="7" State="0" HP="0" Icon="" Description="全体伤害" />
+        <SkillInfo SkillIdx="142" Name="冰雨" Type="2" Attack="120" Radius="0" Select="4" Count="7" State="0" HP="0" Icon="" Description="全体伤害" />
+        <SkillInfo SkillIdx="141" Name="嗜血" Type="2" Attack="0" Radius="0" Select="5" Count="2" State="4" HP="0" Icon="" Description="下回合攻击加倍" />
+        <SkillInfo SkillIdx="140" Name="重压" Type="2" Attack="90" Radius="0" Select="4" Count="7" State="0" HP="0" Icon="" Description="全体伤害" />
+        <SkillInfo SkillIdx="139" Name="入定" Type="2" Attack="0" Radius="0" Select="5" Count="1" State="2" HP="0" Icon="" Description="下回合无敌" />
+        <SkillInfo SkillIdx="138" Name="大肚" Type="2" Attack="120" Radius="0" Select="4" Count="7" State="0" HP="0" Icon="" Description="全体伤害" />
+        <SkillInfo SkillIdx="137" Name="蟠桃" Type="2" Attack="50" Radius="0" Select="4" Count="7" State="0" HP="1" Icon="" Description="自己回血" />
+        <SkillInfo SkillIdx="136" Name="神目" Type="2" Attack="150" Radius="0" Select="4" Count="7" State="0" HP="0" Icon="" Description="全体伤害" />
+        <SkillInfo SkillIdx="135" Name="蚁力神" Type="2" Attack="30" Radius="0" Select="4" Count="7" State="0" HP="1" Icon="" Description="自己回血" />
+        <SkillInfo SkillIdx="134" Name="棒击LV4" Type="2" Attack="100" Radius="50" Select="2" Count="3" State="0" HP="0" Icon="" Description="范围伤害" />
+        <SkillInfo SkillIdx="133" Name="棒击LV3" Type="2" Attack="90" Radius="50" Select="2" Count="3" State="0" HP="0" Icon="" Description="范围伤害" />
+        <SkillInfo SkillIdx="132" Name="棒击LV2" Type="2" Attack="80" Radius="50" Select="2" Count="3" State="0" HP="0" Icon="" Description="范围伤害" />
+        <SkillInfo SkillIdx="131" Name="棒击LV1" Type="2" Attack="70" Radius="50" Select="2" Count="3" State="0" HP="0" Icon="" Description="范围伤害" />
+        <SkillInfo SkillIdx="130" Name="矛击LV4" Type="2" Attack="90" Radius="30" Select="2" Count="2" State="0" HP="0" Icon="" Description="范围伤害" />
+        <SkillInfo SkillIdx="129" Name="矛击LV3" Type="2" Attack="80" Radius="30" Select="2" Count="2" State="0" HP="0" Icon="" Description="范围伤害" />
+        <SkillInfo SkillIdx="128" Name="矛击LV2" Type="2" Attack="70" Radius="30" Select="2" Count="2" State="0" HP="0" Icon="" Description="范围伤害" />
+        <SkillInfo SkillIdx="127" Name="矛击LV1" Type="2" Attack="60" Radius="30" Select="2" Count="2" State="0" HP="0" Icon="" Description="范围伤害" />
+        <SkillInfo SkillIdx="126" Name="大火球LV4" Type="2" Attack="100" Radius="80" Select="2" Count="4" State="0" HP="0" Icon="" Description="范围伤害" />
+        <SkillInfo SkillIdx="125" Name="大火球LV3" Type="2" Attack="90" Radius="80" Select="2" Count="4" State="0" HP="0" Icon="" Description="范围伤害" />
+        <SkillInfo SkillIdx="124" Name="大火球LV2" Type="2" Attack="80" Radius="80" Select="2" Count="4" State="0" HP="0" Icon="" Description="范围伤害" />
+        <SkillInfo SkillIdx="123" Name="大火球LV1" Type="2" Attack="70" Radius="80" Select="2" Count="4" State="0" HP="0" Icon="" Description="范围伤害" />
+        <SkillInfo SkillIdx="122" Name="爆炸箭LV4" Type="2" Attack="110" Radius="50" Select="2" Count="3" State="0" HP="0" Icon="" Description="范围伤害" />
+        <SkillInfo SkillIdx="121" Name="爆炸箭LV3" Type="2" Attack="110" Radius="50" Select="2" Count="3" State="0" HP="0" Icon="" Description="范围伤害" />
+        <SkillInfo SkillIdx="120" Name="爆炸箭LV2" Type="2" Attack="110" Radius="50" Select="2" Count="3" State="0" HP="0" Icon="" Description="范围伤害" />
+        <SkillInfo SkillIdx="119" Name="爆炸箭LV1" Type="2" Attack="110" Radius="50" Select="2" Count="3" State="0" HP="0" Icon="" Description="范围伤害" />
+        <SkillInfo SkillIdx="118" Name="电击LV4" Type="2" Attack="150" Radius="0" Select="1" Count="1" State="0" HP="0" Icon="" Description="单体攻击第一人" />
+        <SkillInfo SkillIdx="117" Name="电击LV3" Type="2" Attack="150" Radius="0" Select="1" Count="1" State="0" HP="0" Icon="" Description="单体攻击第一人" />
+        <SkillInfo SkillIdx="116" Name="电击LV2" Type="2" Attack="150" Radius="0" Select="1" Count="1" State="0" HP="0" Icon="" Description="单体攻击第一人" />
+        <SkillInfo SkillIdx="115" Name="电击LV1" Type="2" Attack="150" Radius="0" Select="1" Count="1" State="0" HP="0" Icon="" Description="单体攻击第一人" />
+        <SkillInfo SkillIdx="114" Name="飞剑" Type="2" Attack="90" Radius="0" Select="4" Count="7" State="0" HP="0" Icon="" Description="全体伤害" />
+        <SkillInfo SkillIdx="113" Name="砸击" Type="2" Attack="90" Radius="0" Select="4" Count="7" State="0" HP="0" Icon="" Description="全体伤害" />
+        <SkillInfo SkillIdx="112" Name="喷嚏" Type="2" Attack="80" Radius="0" Select="4" Count="7" State="0" HP="0" Icon="" Description="全体伤害" />
+        <SkillInfo SkillIdx="111" Name="召唤" Type="2" Attack="100000000" Radius="0" Select="1" Count="1" State="0" HP="0" Icon="" Description="单体直接死亡" />
+        <SkillInfo SkillIdx="110" Name="吸魂" Type="2" Attack="80" Radius="0" Select="4" Count="7" State="0" HP="1" Icon="" Description="吸血（特殊）" />
+        <SkillInfo SkillIdx="109" Name="地狱镰刀" Type="2" Attack="150" Radius="0" Select="4" Count="7" State="0" HP="0" Icon="" Description="全体伤害" />
+        <SkillInfo SkillIdx="108" Name="毒舌" Type="2" Attack="100" Radius="0" Select="4" Count="7" State="0" HP="0" Icon="" Description="全体伤害" />
+        <SkillInfo SkillIdx="107" Name="泰山压顶" Type="2" Attack="100" Radius="0" Select="4" Count="7" State="0" HP="0" Icon="" Description="全体伤害" />
+        <SkillInfo SkillIdx="106" Name="冲撞" Type="2" Attack="90" Radius="0" Select="4" Count="7" State="0" HP="0" Icon="" Description="全体伤害" />
+        <SkillInfo SkillIdx="105" Name="巨铲" Type="2" Attack="120" Radius="50" Select="2" Count="3" State="0" HP="0" Icon="" Description="范围伤害" />
+        <SkillInfo SkillIdx="104" Name="冰冻" Type="2" Attack="80" Radius="0" Select="4" Count="7" State="0" HP="0" Icon="" Description="全体伤害" />
+        <SkillInfo SkillIdx="103" Name="刀砍" Type="2" Attack="150" Radius="80" Select="2" Count="5" State="0" HP="0" Icon="" Description="范围伤害" />
+        <SkillInfo SkillIdx="102" Name="震地" Type="2" Attack="80" Radius="0" Select="4" Count="7" State="0" HP="0" Icon="" Description="全体伤害" />
+        <SkillInfo SkillIdx="101" Name="蒸汽雨" Type="2" Attack="80" Radius="0" Select="4" Count="7" State="0" HP="0" Icon="" Description="全体伤害" />
+        <SkillInfo SkillIdx="100" Name="反光" Type="2" Attack="150" Radius="0" Select="4" Count="7" State="0" HP="0" Icon="" Description="全体伤害" />
+        <SkillInfo SkillIdx="99" Name="砸地" Type="2" Attack="60" Radius="0" Select="4" Count="7" State="0" HP="0" Icon="" Description="全体伤害" />
+        <SkillInfo SkillIdx="98" Name="剪刀剪" Type="2" Attack="90" Radius="0" Select="4" Count="7" State="0" HP="0" Icon="" Description="全体伤害" />
+        <SkillInfo SkillIdx="97" Name="舌压" Type="2" Attack="100" Radius="120" Select="2" Count="5" State="0" HP="0" Icon="" Description="范围伤害" />
+        <SkillInfo SkillIdx="96" Name="如来神掌" Type="2" Attack="200" Radius="80" Select="2" Count="3" State="0" HP="0" Icon="" Description="范围伤害" />
+        <SkillInfo SkillIdx="95" Name="大笑" Type="2" Attack="100" Radius="0" Select="4" Count="7" State="0" HP="0" Icon="" Description="全体伤害" />
+        <SkillInfo SkillIdx="94" Name="莲花雨" Type="2" Attack="100" Radius="0" Select="4" Count="7" State="0" HP="0" Icon="" Description="全体伤害" />
+        <SkillInfo SkillIdx="93" Name="狗喷火" Type="2" Attack="110" Radius="80" Select="2" Count="5" State="0" HP="0" Icon="" Description="范围伤害" />
+        <SkillInfo SkillIdx="92" Name="狂雷" Type="2" Attack="200" Radius="0" Select="4" Count="7" State="0" HP="0" Icon="" Description="全体伤害" />
+        <SkillInfo SkillIdx="91" Name="剑指" Type="2" Attack="150" Radius="0" Select="1" Count="1" State="0" HP="0" Icon="" Description="单体伤害" />
+        <SkillInfo SkillIdx="90" Name="蛇毒" Type="2" Attack="90" Radius="0" Select="4" Count="7" State="0" HP="0" Icon="" Description="全体伤害" />
+        <SkillInfo SkillIdx="89" Name="塔压" Type="2" Attack="110" Radius="0" Select="4" Count="7" State="0" HP="0" Icon="" Description="全体伤害" />
+        <SkillInfo SkillIdx="88" Name="斧砍" Type="2" Attack="120" Radius="80" Select="2" Count="3" State="0" HP="0" Icon="" Description="范围伤害" />
+        <SkillInfo SkillIdx="87" Name="指弹LV4" Type="2" Attack="100" Radius="0" Select="1" Count="1" State="0" HP="0" Icon="" Description="伤害第一人" />
+        <SkillInfo SkillIdx="86" Name="指弹LV3" Type="2" Attack="100" Radius="0" Select="1" Count="1" State="0" HP="0" Icon="" Description="伤害第一人" />
+        <SkillInfo SkillIdx="85" Name="指弹LV2" Type="2" Attack="100" Radius="0" Select="1" Count="1" State="0" HP="0" Icon="" Description="伤害第一人" />
+        <SkillInfo SkillIdx="84" Name="指弹LV1" Type="2" Attack="100" Radius="0" Select="1" Count="1" State="0" HP="0" Icon="" Description="伤害第一人" />
+        <SkillInfo SkillIdx="83" Name="飞矛LV4" Type="2" Attack="90" Radius="0" Select="1" Count="1" State="0" HP="0" Icon="" Description="随机单体" />
+        <SkillInfo SkillIdx="82" Name="飞矛LV3" Type="2" Attack="90" Radius="0" Select="1" Count="1" State="0" HP="0" Icon="" Description="随机单体" />
+        <SkillInfo SkillIdx="81" Name="飞矛LV2" Type="2" Attack="90" Radius="0" Select="1" Count="1" State="0" HP="0" Icon="" Description="随机单体" />
+        <SkillInfo SkillIdx="80" Name="飞矛LV1" Type="2" Attack="90" Radius="0" Select="1" Count="1" State="0" HP="0" Icon="" Description="随机单体" />
+        <SkillInfo SkillIdx="79" Name="小火球LV4" Type="2" Attack="100" Radius="0" Select="1" Count="1" State="0" HP="0" Icon="" Description="随机单体" />
+        <SkillInfo SkillIdx="78" Name="小火球LV3" Type="2" Attack="100" Radius="0" Select="1" Count="1" State="0" HP="0" Icon="" Description="随机单体" />
+        <SkillInfo SkillIdx="77" Name="小火球LV2" Type="2" Attack="100" Radius="0" Select="1" Count="1" State="0" HP="0" Icon="" Description="随机单体" />
+        <SkillInfo SkillIdx="76" Name="小火球LV1" Type="2" Attack="100" Radius="0" Select="1" Count="1" State="0" HP="0" Icon="" Description="随机单体" />
+        <SkillInfo SkillIdx="75" Name="第一支箭LV4" Type="2" Attack="100" Radius="0" Select="1" Count="1" State="0" HP="0" Icon="" Description="随机单体" />
+        <SkillInfo SkillIdx="74" Name="第一支箭LV3" Type="2" Attack="100" Radius="0" Select="1" Count="1" State="0" HP="0" Icon="" Description="随机单体" />
+        <SkillInfo SkillIdx="73" Name="第一支箭LV2" Type="2" Attack="100" Radius="0" Select="1" Count="1" State="0" HP="0" Icon="" Description="随机单体" />
+        <SkillInfo SkillIdx="72" Name="第一支箭LV1" Type="2" Attack="100" Radius="0" Select="1" Count="1" State="0" HP="0" Icon="" Description="随机单体" />
+        <SkillInfo SkillIdx="71" Name="口水LV4" Type="2" Attack="100" Radius="0" Select="1" Count="1" State="0" HP="0" Icon="" Description="随机单体" />
+        <SkillInfo SkillIdx="70" Name="口水LV3" Type="2" Attack="100" Radius="0" Select="1" Count="1" State="0" HP="0" Icon="" Description="随机单体" />
+        <SkillInfo SkillIdx="69" Name="口水LV2" Type="2" Attack="100" Radius="0" Select="1" Count="1" State="0" HP="0" Icon="" Description="随机单体" />
+        <SkillInfo SkillIdx="68" Name="口水LV1" Type="2" Attack="100" Radius="0" Select="1" Count="1" State="0" HP="0" Icon="" Description="随机单体" />
+        <SkillInfo SkillIdx="67" Name="砸击" Type="2" Attack="90" Radius="0" Select="4" Count="7" State="0" HP="0" Icon="" Description="全体伤害" />
+        <SkillInfo SkillIdx="66" Name="旋转" Type="2" Attack="70" Radius="0" Select="4" Count="7" State="0" HP="0" Icon="" Description="全体伤害" />
+        <SkillInfo SkillIdx="65" Name="纯净毒奶" Type="2" Attack="100" Radius="0" Select="2" Count="3" State="0" HP="0" Icon="" Description="随机3个单体目标" />
+        <SkillInfo SkillIdx="64" Name="判官笔" Type="2" Attack="200" Radius="0" Select="1" Count="1" State="0" HP="0" Icon="" Description="伤害第一人" />
+        <SkillInfo SkillIdx="63" Name="鬼火" Type="2" Attack="80" Radius="0" Select="1" Count="1" State="0" HP="0" Icon="" Description="随机单体" />
+        <SkillInfo SkillIdx="62" Name="刀啄" Type="2" Attack="100" Radius="0" Select="3" Count="1" State="0" HP="0" Icon="" Description="随机单体" />
+        <SkillInfo SkillIdx="61" Name="凿击" Type="2" Attack="150" Radius="0" Select="3" Count="1" State="0" HP="0" Icon="" Description="随机单体" />
+        <SkillInfo SkillIdx="60" Name="飞石" Type="2" Attack="60" Radius="0" Select="2" Count="5" State="0" HP="0" Icon="" Description="随机5个目标" />
+        <SkillInfo SkillIdx="59" Name="脚踢" Type="2" Attack="120" Radius="0" Select="1" Count="1" State="0" HP="0" Icon="" Description="伤害第一人" />
+        <SkillInfo SkillIdx="58" Name="泼油" Type="2" Attack="60" Radius="0" Select="2" Count="3" State="0" HP="0" Icon="" Description="随机3个目标" />
+        <SkillInfo SkillIdx="57" Name="冰箭" Type="2" Attack="120" Radius="0" Select="1" Count="1" State="0" HP="0" Icon="" Description="随机单体" />
+        <SkillInfo SkillIdx="56" Name="刀戳" Type="2" Attack="100" Radius="0" Select="3" Count="1" State="0" HP="0" Icon="" Description="伤害第一人" />
+        <SkillInfo SkillIdx="55" Name="倒塌" Type="2" Attack="50" Radius="0" Select="4" Count="7" State="0" HP="0" Icon="" Description="全体伤害" />
+        <SkillInfo SkillIdx="54" Name="撞击" Type="2" Attack="120" Radius="0" Select="3" Count="1" State="0" HP="0" Icon="" Description="伤害第一人" />
+        <SkillInfo SkillIdx="53" Name="照妖镜" Type="2" Attack="150" Radius="0" Select="1" Count="1" State="0" HP="0" Icon="" Description="随机单体" />
+        <SkillInfo SkillIdx="52" Name="手插" Type="2" Attack="120" Radius="0" Select="1" Count="1" State="0" HP="0" Icon="" Description="随机单体" />
+        <SkillInfo SkillIdx="51" Name="戳" Type="2" Attack="100" Radius="0" Select="2" Count="2" State="0" HP="0" Icon="" Description="前面2个目标" />
+        <SkillInfo SkillIdx="50" Name="舔" Type="2" Attack="70" Radius="0" Select="3" Count="1" State="0" HP="0" Icon="" Description="伤害第一人" />
+        <SkillInfo SkillIdx="49" Name="佛光" Type="2" Attack="100" Radius="0" Select="4" Count="7" State="0" HP="0" Icon="" Description="全体伤害" />
+        <SkillInfo SkillIdx="48" Name="脚踩" Type="2" Attack="80" Radius="50" Select="2" Count="3" State="0" HP="0" Icon="" Description="范围伤害" />
+        <SkillInfo SkillIdx="47" Name="圣水" Type="2" Attack="80" Radius="0" Select="2" Count="3" State="0" HP="0" Icon="" Description="随机3个单体目标" />
+        <SkillInfo SkillIdx="46" Name="枪刺" Type="2" Attack="90" Radius="0" Select="3" Count="2" State="0" HP="0" Icon="" Description="前面2个目标" />
+        <SkillInfo SkillIdx="45" Name="雷击" Type="2" Attack="120" Radius="0" Select="1" Count="1" State="0" HP="0" Icon="" Description="随机单体" />
+        <SkillInfo SkillIdx="44" Name="拂尘" Type="2" Attack="100" Radius="0" Select="1" Count="1" State="0" HP="0" Icon="" Description="随机单体" />
+        <SkillInfo SkillIdx="43" Name="伞打" Type="2" Attack="100" Radius="80" Select="2" Count="3" State="0" HP="0" Icon="" Description="范围伤害" />
+        <SkillInfo SkillIdx="42" Name="鞭打" Type="2" Attack="90" Radius="0" Select="2" Count="5" State="0" HP="0" Icon="" Description="范围伤害" />
+        <SkillInfo SkillIdx="41" Name="脚踢" Type="2" Attack="100" Radius="0" Select="3" Count="2" State="0" HP="0" Icon="" Description="前面2个目标" />
+    </SkillInfo>
+    <GoodsInfo>
+        <GoodsInfo GoodsIdx="1" Name="强力药水" CanUse="0" Main="0" Type="1" Value="200" EffectTime="12" Icon="icon/1.png" Description="攻击力加倍，持续12小时" />
+        <GoodsInfo GoodsIdx="2" Name="幸运药水" CanUse="0" Main="0" Type="2" Value="30" EffectTime="12" Icon="icon/2.png" Description="幸运值加30。持续12小时" />
+        <GoodsInfo GoodsIdx="3" Name="石肤药水" CanUse="0" Main="0" Type="3" Value="200" EffectTime="12" Icon="icon/3.png" Description="防御力加倍，持续12小时" />
+        <GoodsInfo GoodsIdx="4" Name="生命药水" CanUse="0" Main="0" Type="4" Value="200" EffectTime="12" Icon="icon/4.png" Description="生命值提升一倍，持续12小时" />
+        <GoodsInfo GoodsIdx="5" Name="催肥剂" CanUse="0" Main="0" Type="5" Value="2000" EffectTime="0" Icon="icon/5.png" Description="增加2000头猪" />
+        <GoodsInfo GoodsIdx="6" Name="瘦肉精" CanUse="0" Main="0" Type="5" Value="10000" EffectTime="0" Icon="icon/6.png" Description="增加10000头猪" />
+        <GoodsInfo GoodsIdx="7" Name="小宝石" CanUse="1" Main="0" Type="6" Value="3" EffectTime="0" Icon="icon/7.png" Description="提升强化成功率3" />
+        <GoodsInfo GoodsIdx="8" Name="中宝石" CanUse="1" Main="0" Type="6" Value="5" EffectTime="0" Icon="icon/8.png" Description="提升强化成功率5" />
+        <GoodsInfo GoodsIdx="9" Name="大宝石" CanUse="1" Main="0" Type="6" Value="20" EffectTime="0" Icon="icon/9.png" Description="提升强化成功率20" />
+        <GoodsInfo GoodsIdx="10" Name="9朵玫瑰" CanUse="1" Main="0" Type="7" Value="9" EffectTime="0" Icon="icon/10.png" Description="赠送给好友，提升好友度9点" />
+        <GoodsInfo GoodsIdx="11" Name="99朵玫瑰" CanUse="1" Main="0" Type="7" Value="99" EffectTime="0" Icon="icon/11.png" Description="赠送给好友，提升好友度99点" />
+        <GoodsInfo GoodsIdx="12" Name="999朵玫瑰" CanUse="1" Main="0" Type="7" Value="999" EffectTime="0" Icon="icon/12.png" Description="赠送给好友，提升好友度999点" />
+        <GoodsInfo GoodsIdx="13" Name="9999朵玫瑰" CanUse="1" Main="0" Type="7" Value="9999" EffectTime="0" Icon="icon/13.png" Description="赠送给好友，提升好友度9999点" />
+        <GoodsInfo GoodsIdx="17" Name="弓之魂" CanUse="0" Main="0" Type="11" Value="10" EffectTime="0" Icon="icon/17.png" Description="增加弓熟练度10点" />
+        <GoodsInfo GoodsIdx="15" Name="斗志昂扬" CanUse="0" Main="0" Type="9" Value="2" EffectTime="0" Icon="icon/15.png" Description="使用后，每天可以多挑战2次玩家" />
+        <GoodsInfo GoodsIdx="16" Name="刺之魂" CanUse="0" Main="0" Type="10" Value="10" EffectTime="0" Icon="icon/16.png" Description="增加鱼刺熟练度10点" />
+        <GoodsInfo GoodsIdx="18" Name="杖之魂" CanUse="0" Main="0" Type="12" Value="10" EffectTime="0" Icon="icon/18.png" Description="增加魔杖熟练度10点" />
+        <GoodsInfo GoodsIdx="19" Name="锤之魂" CanUse="0" Main="0" Type="13" Value="10" EffectTime="0" Icon="icon/19.png" Description="增加锤熟练度10点" />
+        <GoodsInfo GoodsIdx="20" Name="矛之魂" CanUse="0" Main="0" Type="14" Value="10" EffectTime="0" Icon="icon/20.png" Description="增加矛熟练度10点" />
+        <GoodsInfo GoodsIdx="22" Name="100金币" CanUse="0" Main="1" Type="16" Value="100" EffectTime="0" Icon="icon/20.png" Description="500金币" />
+        <GoodsInfo GoodsIdx="21" Name="20金币" CanUse="0" Main="1" Type="16" Value="20" EffectTime="0" Icon="icon/20.png" Description="100金币" />
+        <GoodsInfo GoodsIdx="23" Name="500金币" CanUse="0" Main="1" Type="16" Value="500" EffectTime="0" Icon="icon/20.png" Description="5000金币" />
+        <GoodsInfo GoodsIdx="24" Name="20经验" CanUse="0" Main="1" Type="15" Value="20" EffectTime="0" Icon="icon/20.png" Description="20经验" />
+        <GoodsInfo GoodsIdx="25" Name="100经验" CanUse="0" Main="1" Type="15" Value="100" EffectTime="0" Icon="icon/20.png" Description="100经验" />
+        <GoodsInfo GoodsIdx="26" Name="500经验" CanUse="0" Main="1" Type="15" Value="500" EffectTime="0" Icon="icon/20.png" Description="500经验" />
+        <GoodsInfo GoodsIdx="27" Name="1点弓箭武魂" CanUse="0" Main="1" Type="11" Value="1" EffectTime="0" Icon="icon/20.png" Description="1点弓箭武魂" />
+        <GoodsInfo GoodsIdx="28" Name="1点鱼刺武魂" CanUse="0" Main="1" Type="10" Value="1" EffectTime="0" Icon="icon/20.png" Description="1点鱼刺武魂" />
+        <GoodsInfo GoodsIdx="29" Name="1点战锤武魂" CanUse="0" Main="1" Type="13" Value="1" EffectTime="0" Icon="icon/20.png" Description="1点战锤武魂" />
+        <GoodsInfo GoodsIdx="30" Name="1点魔杖武魂" CanUse="0" Main="1" Type="12" Value="1" EffectTime="0" Icon="icon/20.png" Description="1点魔杖武魂" />
+        <GoodsInfo GoodsIdx="31" Name="1点长矛武魂" CanUse="0" Main="1" Type="14" Value="1" EffectTime="0" Icon="icon/20.png" Description="1点长矛真魂" />
+        <GoodsInfo GoodsIdx="32" Name="1金豆" CanUse="0" Main="1" Type="17" Value="1" EffectTime="0" Icon="icon/20.png" Description="1金豆" />
+        <GoodsInfo GoodsIdx="33" Name="3金豆" CanUse="0" Main="1" Type="17" Value="3" EffectTime="0" Icon="icon/20.png" Description="3金豆" />
+        <GoodsInfo GoodsIdx="34" Name="9金豆" CanUse="0" Main="1" Type="17" Value="9" EffectTime="0" Icon="icon/20.png" Description="9金豆" />
+        <GoodsInfo GoodsIdx="35" Name="任务金币" CanUse="0" Main="0" Type="0" Value="0" EffectTime="0" Icon="icon/20.png" Description="9金豆" />
+        <GoodsInfo GoodsIdx="36" Name="任务金豆" CanUse="0" Main="0" Type="0" Value="0" EffectTime="0" Icon="icon/20.png" Description="9金豆" />
+        <GoodsInfo GoodsIdx="37" Name="任务经验" CanUse="0" Main="0" Type="0" Value="0" EffectTime="0" Icon="icon/20.png" Description="9金豆" />
+        <GoodsInfo GoodsIdx="38" Name="烤鱼" CanUse="0" Main="0" Type="18" Value="0" EffectTime="0" Icon="icon/38.png" Description="美味当前，如何抵挡？强行雇佣一名玩家。" />
+        <GoodsInfo GoodsIdx="39" Name="摄魂丸" CanUse="0" Main="0" Type="19" Value="0" EffectTime="0" Icon="icon/39.png" Description="天灵灵，地灵灵，让他永远属于我！保护一名玩家不被强行雇佣。" />
+    </GoodsInfo>
+    <StoreInfo>
+        <StoreInfo GoodsIdx="1" Count="1" Money="3" Gold="1" State="1" Discount="80" />
+        <StoreInfo GoodsIdx="2" Count="1" Money="8" Gold="1" State="0" Discount="0" />
+        <StoreInfo GoodsIdx="3" Count="1" Money="3" Gold="1" State="1" Discount="80" />
+        <StoreInfo GoodsIdx="4" Count="1" Money="12" Gold="1" State="0" Discount="0" />
+        <StoreInfo GoodsIdx="5" Count="1" Money="6" Gold="1" State="0" Discount="0" />
+        <StoreInfo GoodsIdx="6" Count="1" Money="26" Gold="1" State="0" Discount="0" />
+        <StoreInfo GoodsIdx="7" Count="1" Money="26" Gold="1" State="1" Discount="80" />
+        <StoreInfo GoodsIdx="8" Count="1" Money="48" Gold="1" State="1" Discount="80" />
+        <StoreInfo GoodsIdx="9" Count="1" Money="179" Gold="1" State="1" Discount="80" />
+        <StoreInfo GoodsIdx="10" Count="1" Money="3" Gold="1" State="0" Discount="0" />
+        <StoreInfo GoodsIdx="11" Count="1" Money="28" Gold="1" State="0" Discount="0" />
+        <StoreInfo GoodsIdx="12" Count="1" Money="300" Gold="1" State="0" Discount="0" />
+        <StoreInfo GoodsIdx="13" Count="1" Money="2000" Gold="1" State="0" Discount="0" />
+        <StoreInfo GoodsIdx="16" Count="1" Money="38" Gold="1" State="1" Discount="80" />
+        <StoreInfo GoodsIdx="17" Count="1" Money="38" Gold="1" State="1" Discount="80" />
+        <StoreInfo GoodsIdx="18" Count="1" Money="38" Gold="1" State="1" Discount="80" />
+        <StoreInfo GoodsIdx="19" Count="1" Money="38" Gold="1" State="1" Discount="80" />
+        <StoreInfo GoodsIdx="20" Count="1" Money="38" Gold="1" State="1" Discount="80" />
+    </StoreInfo>
+    <BufferInfo>
+        <BufferInfo BufferIdx="1" Icon="icon\buff\1.png" Description="攻击加倍" />
+        <BufferInfo BufferIdx="2" Icon="icon\buff\2.png" Description="幸运加倍，暴击率提高" />
+        <BufferInfo BufferIdx="3" Icon="icon\buff\3.png" Description="防御加倍" />
+        <BufferInfo BufferIdx="4" Icon="icon\buff\4.png" Description="生命加倍" />
+    </BufferInfo>
+</root>

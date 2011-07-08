@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talk>
+	<boss>
+		<boss id="1" openning = "小样，我一脚踩死你！" wait = "让我喘口气！"  win = "险胜险胜！" die = "我的屁股啊！"/>
+		<boss id="2" openning = "哪里来的小P孩！" wait = "等等！"  win = "还是开发商厉害啊！" die = "儿子，我好想你！"/>
+		<boss id="3" openning = "嗖嗖！" wait = "嘶嘶！"  win = "嗖嗖嗖！" die = "(⊙o⊙)…"/>
+		<boss id="4" openning = "老夫来也！" wait = "哎呦哎呦！" win = "老当益壮！" die = "还是被拍在沙滩上了！"/>
+		<boss id="5" openning = "……" wait = "……"  win = "哈哈！" die = "啊……"/>
+		<boss id="6" openning = "天下我最帅！" wait = "卡拉，乖！"  win = "赢都赢的这么帅！" die = "可惜这么帅了啊！"/>
+		<boss id="7" openning = "来了！" wait = "换个姿势，再来一次！"  win = "这么快就不行了？" die = "你怎么忍心！"/>
+		<boss id="8" openning = "哈哈哈！" wait = "哈哈!"  win = "哈哈哈哈哈哈！" die = "……"/>
+		<boss id="9" openning = "大梦谁先醒，平生我自知！" wait = "回去吧，凡人！"  win = "苦海无涯，回头是岸！" die = "我不入地狱谁入地狱！"/>
+		<boss id="10" openning = "来，舔一下!" wait = "等等舔一下！"  win = "真美味！" die = "……"/>
+		<boss id="11" openning = "哦！" wait = "哈！"  win = "耶！" die = "呃！"/>
+		<boss id="12" openning = "我来自魔戒！" wait = "我认识哈比人！"  win = "哈比人输了！" die = "哈比人厉害啊！"/>
+		<boss id="13" openning = "来照照，看你是人还是鬼！" wait = "还照不？"  win = "看你们的丑样！" die = "碎了，碎了"/>
+		<boss id="14" openning = "想吃我吗？" wait = "再蒸一会！"  win = "看你还吃不吃包子！" die = "又被人吃了！"/>
+		<boss id="15" openning = "别盲目崇拜我!" wait = "哥只是个传说！"  win = "传说就是传说！" die = "传说到此终结！"/>
+		<boss id="16" openning = "看！刀！!" wait = "磨磨刀！"  win = "刀神！" die = "刀剑无情啊！"/>
+		<boss id="17" openning = "Im Coming!!" wait = "Wait!"  win = "I win！" die = "NO！"/>
+		<boss id="18" openning = "喜刷刷喜刷刷！" wait = "潜个水！"  win = "沙发！" die = "小黑屋！"/>
+		<boss id="19" openning = "牛来了！" wait = "牛屎！"  win = "牛蝇！" die = "牛死了！"/>
+		<boss id="20" openning = "我不会说话！" wait = "我真的不会说话！"  win = "还是不会说话！" die = "打死也不说话！"/>
+		<boss id="21" openning = "登场思密达！" wait = "休息思密达！"  win = "胜利思密达！" die = "战败思密达！"/>
+		<boss id="22" openning = "又有人想死了！" wait = "人谁无死？"  win = "都去死吧！" die = "我也会死？"/>
+		<boss id="23" openning = "我轻轻的来了！" wait = "还不想轻轻的走！"  win = "张开双臂你就拥有世界！" die = "握紧拳头你什么都没有！"/>
+		<boss id="24" openning = "纳尼？" wait = "就都麻袋！"  win = "干爸爹！" die = "哦哇达！"/>
+		<boss id="25" openning = "无敌奶牛登场！" wait = "吃个木瓜催下奶！"  win = "监管部门奈我何？" die = "做人还是要讲良心啊！"/>
+		<boss id="26" openning = "锄禾日当午！" wait = "清明上河图！"  win = "造血干细胞！" die = "复方草珊瑚！"/>
+		<boss id="27" openning = "剑人合一！" wait = "剑人！"  win = "剑人必胜！" die = "银剑也不行了！"/>
+		<boss id="28" openning = "深海鱼油来了！" wait = "出油了，歇一下！"  win = "我太厉害了！" die = "算哥赏你的！"/> 
+		<boss id="29" openning = "深海鱼油来了！" wait = "出油了，歇一下！"  win = "我太厉害了！" die = "算哥赏你的！"/> 
+		<boss id="30" openning = "深海鱼油来了！" wait = "出油了，歇一下！"  win = "我太厉害了！" die = "算哥赏你的！"/> 
+		<boss id="31" openning = "深海鱼油来了！" wait = "出油了，歇一下！"  win = "我太厉害了！" die = "算哥赏你的！"/> 
+		<boss id="32" openning = "嫦娥，别走！" wait = "临阵磨箭！"  win = "你就是那第十个太阳！" die = "我来陪你了，嫦娥！"/> 
+		<boss id="33" openning = "嫦娥，别走！" wait = "临阵磨箭！"  win = "你就是那第十个太阳！" die = "我来陪你了，嫦娥！"/> 
+		<boss id="34" openning = "嫦娥，别走！" wait = "临阵磨箭！"  win = "你就是那第十个太阳！" die = "我来陪你了，嫦娥！"/> 
+		<boss id="35" openning = "嫦娥，别走！" wait = "临阵磨箭！"  win = "你就是那第十个太阳！" die = "我来陪你了，嫦娥！"/> 
+		<boss id="36" openning = "此山是我开，此树是我栽，想从此路过，留下买路财！" wait = "敢跟爷斗！"  win = "跟爷死磕？嫩了点！" die = "点子太硬，扯呼！"/>
+		<boss id="37" openning = "此山是我开，此树是我栽，想从此路过，留下买路财！" wait = "敢跟爷斗！"  win = "跟爷死磕？嫩了点！" die = "点子太硬，扯呼！"/>
+		<boss id="38" openning = "此山是我开，此树是我栽，想从此路过，留下买路财！" wait = "敢跟爷斗！"  win = "跟爷死磕？嫩了点！" die = "点子太硬，扯呼！"/>
+		<boss id="39" openning = "此山是我开，此树是我栽，想从此路过，留下买路财！" wait = "敢跟爷斗！"  win = "跟爷死磕？嫩了点！" die = "点子太硬，扯呼！"/>
+		<boss id="40" openning = "我大哥是兽人！" wait = "累死我了！"  win = "部落万岁！" die = "牛头人兄弟，帮我报仇啊！"/> 
+		<boss id="41" openning = "我大哥是兽人！" wait = "累死我了！"  win = "部落万岁！" die = "牛头人兄弟，帮我报仇啊！"/> 
+		<boss id="42" openning = "我大哥是兽人！" wait = "累死我了！"  win = "部落万岁！" die = "牛头人兄弟，帮我报仇啊！"/> 
+		<boss id="43" openning = "我大哥是兽人！" wait = "累死我了！"  win = "部落万岁！" die = "牛头人兄弟，帮我报仇啊！"/> 
+		<boss id="44" openning = "登场思密达！" wait = "休息思密达！"  win = "胜利思密达！" die = "战败思密达！"/>
+		<boss id="45" openning = "登场思密达！" wait = "休息思密达！"  win = "胜利思密达！" die = "战败思密达！"/>
+		<boss id="46" openning = "登场思密达！" wait = "休息思密达！"  win = "胜利思密达！" die = "战败思密达！"/>
+		<boss id="47" openning = "登场思密达！" wait = "休息思密达！"  win = "胜利思密达！" die = "战败思密达！"/>
+	</boss>
+	<skill>
+		<skill id = "1" talk = "突击！"/>
+		<skill id = "2" talk = "砍你三刀！"/>
+		<skill id = "3" talk = "我力劈华山！"/>
+		<skill id = "4" talk = "我挡！"/>
+		<skill id = "5" talk = "看我华丽的影杀！"/>
+		<skill id = "6" talk = "我射！"/>
+		<skill id = "7" talk = "一箭双雕！"/>
+		<skill id = "8" talk = "三连珠！"/>
+		<skill id = "9" talk = "分裂箭！"/>
+		<skill id = "10" talk = "颤抖吧！无敌箭雨！"/>
+		<skill id = "11" talk = "火焰的愤怒！"/>
+		<skill id = "12" talk = "别紧张，有我呢！"/>
+		<skill id = "13" talk = "冰霜的震击！"/>
+		<skill id = "14" talk = "全体回复！我是团队续航的保证！"/>
+		<skill id = "15" talk = "冰火九重天！"/>
+		<skill id = "16" talk = "吃我一矛！"/>
+		<skill id = "17" talk = "看我愤怒一击！"/>
+		<skill id = "18" talk = "哥蓄力，下把必暴击！"/>
+		<skill id = "19" talk = "穿糖葫芦！"/>
+		<skill id = "20" talk = "死神在召唤你！"/>
+		<skill id = "21" talk = "一锤砸死你！"/>
+		<skill id = "22" talk = "让你飞起来！"/>
+		<skill id = "23" talk = "泰山压顶！"/>
+		<skill id = "24" talk = "风之力量！"/>
+		<skill id = "25" talk = "吹个大气球，哈哈！"/>
+		<skill id = "41" talk = "我踩！"/>
+		<skill id = "42" talk = "吃我一鞭！"/>
+		<skill id = "43" talk = "咻咻！"/>
+		<skill id = "44" talk = "去！"/>
+		<skill id = "45" talk = "我劈！"/>
+		<skill id = "46" talk = "我刺！"/>
+		<skill id = "47" talk = "洒向人间万千爱！"/>
+		<skill id = "48" talk = "哈哈！"/>
+		<skill id = "49" talk = "万佛朝宗！"/>
+		<skill id = "50" talk = "就舔一下！"/>
+		<skill id = "51" talk = "恩！"/>
+		<skill id = "52" talk = "小哈比人！"/>
+		<skill id = "53" talk = "一照你的青春痘！"/>
+		<skill id = "54" talk = "我顶！"/>
+		<skill id = "55" talk = "压死你们！"/>
+		<skill id = "56" talk = "小李飞刀！"/>
+		<skill id = "57" talk = "Frost Arrow！"/>
+		<skill id = "58" talk = "冒个泡！"/>
+		<skill id = "59" talk = "牛腿！"/>
+		<skill id = "60" talk = "说了我是哑巴!"/>
+		<skill id = "61" talk = "攻击思密达！"/>
+		<skill id = "62" talk = "我砍！"/>
+		<skill id = "63" talk = "挥一挥衣袖！"/>
+		<skill id = "64" talk = "一库！"/>
+		<skill id = "65" talk = "小样！"/>
+		<skill id = "66" talk = "弯弓射大雕！"/>
+		<skill id = "67" talk = "银剑！"/>
+		<skill id = "68" talk = "呸！"/>
+		<skill id = "69" talk = "呸！"/>
+		<skill id = "70" talk = "呸！"/>
+		<skill id = "71" talk = "呸！"/>
+		<skill id = "72" talk = "第一支箭！"/>
+		<skill id = "73" talk = "第一支箭！"/>
+		<skill id = "74" talk = "第一支箭！"/>
+		<skill id = "75" talk = "第一支箭！"/>
+		<skill id = "76" talk = "纳命来！"/>
+		<skill id = "77" talk = "纳命来！"/>
+		<skill id = "78" talk = "纳命来！"/>
+		<skill id = "79" talk = "纳命来！"/>
+		<skill id = "80" talk = "小崽子们，受死吧！"/>
+		<skill id = "81" talk = "小崽子们，受死吧！"/>
+		<skill id = "82" talk = "小崽子们，受死吧！"/>
+		<skill id = "83" talk = "小崽子们，受死吧！"/>
+		<skill id = "84" talk = "吃白菜思密达！"/>
+		<skill id = "85" talk = "吃白菜思密达！"/>
+		<skill id = "86" talk = "吃白菜思密达！"/>
+		<skill id = "87" talk = "吃白菜思密达！"/>
+		<skill id = "88" talk = "不动真格的不行了，看斧子！"/>
+		<skill id = "89" talk = "雷峰塔压死你！"/>
+		<skill id = "90" talk = "嘶嘶！"/>
+		<skill id = "91" talk = "我戳你哦！"/>
+		<skill id = "92" talk = "我劈死你！"/>
+		<skill id = "93" talk = "卡拉，上！"/>
+		<skill id = "94" talk = "莲花雨！"/>
+		<skill id = "95" talk = "哈哈哈！"/>
+		<skill id = "96" talk = "如来神掌！"/>
+		<skill id = "97" talk = "再来舔一下！"/>
+		<skill id = "98" talk = "剪刀剪！"/>
+		<skill id = "99" talk = "死吧，哈比人！"/>
+		<skill id = "100" talk = "二照你的酒糟鼻！"/>
+		<skill id = "101" talk = "熟了！"/>
+		<skill id = "102" talk = "我跳我跳！"/>
+		<skill id = "103" talk = "胡一刀！"/>
+		<skill id = "104" talk = "Freez!"/>
+		<skill id = "105" talk = "咕嘟咕嘟！"/>
+		<skill id = "106" talk = "牛头!"/>
+		<skill id = "107" talk = "你见过山会说话吗？"/>
+		<skill id = "108" talk = "大招思密达！"/>
+		<skill id = "109" talk = "死神镰刀！"/>
+		<skill id = "110" talk = "带走你们的灵魂！"/>
+		<skill id = "111" talk = "克磨机？"/>
+		<skill id = "112" talk = "毒奶泡！"/>
+		<skill id = "113" talk = "重阳插茱萸！"/>
+		<skill id = "114" talk = "醉银剑！"/>
+		<skill id = "115" talk = "电死你！"/>
+		<skill id = "116" talk = "电死你！"/>
+		<skill id = "117" talk = "电死你！"/>
+		<skill id = "118" talk = "电死你！"/>
+		<skill id = "119" talk = "你比太阳如何？"/>
+		<skill id = "120" talk = "你比太阳如何？"/>
+		<skill id = "121" talk = "你比太阳如何？"/>
+		<skill id = "122" talk = "你比太阳如何？"/>
+		<skill id = "123" talk = "大火球！"/>
+		<skill id = "124" talk = "大火球！"/>
+		<skill id = "125" talk = "大火球！"/>
+		<skill id = "126" talk = "大火球！"/>
+		<skill id = "127" talk = "矛击！"/>
+		<skill id = "128" talk = "矛击！"/>
+		<skill id = "129" talk = "矛击！"/>
+		<skill id = "130" talk = "矛击！"/>
+		<skill id = "131" talk = "白菜波气功！"/>
+		<skill id = "132" talk = "白菜波气功！"/>
+		<skill id = "133" talk = "白菜波气功！"/>
+		<skill id = "134" talk = "白菜波气功！"/>
+		<skill id = "135" talk = "蚁立神！"/>
+		<skill id = "136" talk = "第三只手！啊不，眼！"/>
+		<skill id = "137" talk = "美园春！"/>
+		<skill id = "138" talk = "哈！"/>
+		<skill id = "139" talk = "觉悟吧！凡人！"/>
+		<skill id = "140" talk = "肉包子打狗！"/>
+		<skill id = "141" talk = "美刀！"/>
+		<skill id = "142" talk = "Frost Rain！"/>
+		<skill id = "143" talk = "牛鞭！"/>
+		<skill id = "144" talk = "超级毒奶！"/>
+		<skill id = "145" talk = "银剑无敌！"/>
+		<skill id = "146" talk = "咬死你们！"/>
+		<skill id = "147" talk = "咬死你们！"/>
+		<skill id = "148" talk = "咬死你们！"/>
+		<skill id = "149" talk = "爆炸箭！"/>
+		<skill id = "150" talk = "爆炸箭！"/>
+		<skill id = "151" talk = "爆炸箭！"/>
+		<skill id = "152" talk = "神圣之光！"/>
+		<skill id = "153" talk = "神圣之光！"/>
+		<skill id = "154" talk = "神圣之光！"/>
+		<skill id = "155" talk = "剧毒之矛！"/>
+		<skill id = "156" talk = "剧毒之矛！"/>
+		<skill id = "157" talk = "剧毒之矛！"/>
+		<skill id = "158" talk = "思密达啊思密达！"/>
+		<skill id = "159" talk = "思密达啊思密达！"/>
+		<skill id = "160" talk = "思密达啊思密达！"/>
+		<skill id = "161" talk = "强力水炮！"/>
+		<skill id = "162" talk = "强力水炮！"/>
+		<skill id = "163" talk = "寒冰箭！"/>
+		<skill id = "164" talk = "寒冰箭！"/>
+		<skill id = "165" talk = "我就无赖怎么了！"/>
+		<skill id = "166" talk = "我就无赖怎么了！"/>
+		<skill id = "167" talk = "狂虫！"/>
+		<skill id = "168" talk = "狂虫！"/>
+		<skill id = "169" talk = "我家就是白菜多！"/>
+		<skill id = "170" talk = "我家就是白菜多！"/>
+		<skill id = "171" talk = "深海咆哮！"/>
+		<skill id = "172" talk = "九日之魂！"/>
+		<skill id = "173" talk = "末日启示！"/>
+		<skill id = "174" talk = "巫毒之殇！"/>
+		<skill id = "175" talk = "大长今思密达！"/>
+
+	</skill>
+	<bean>
+		<man>
+			<openning talk = "信春哥！"/>
+			<openning talk = "我想死你们了！"/>
+			<openning talk = "必胜！"/>
+			<openning talk = "为了部落！"/>
+			<openning talk = "耶！"/>
+			<openning talk = "呀呼！"/>
+			<openning talk = "杀啊！"/>
+			<openning talk = "冲啊！"/>
+			<wait talk = "看你奈我何？"/>
+			<wait talk = "你们不行了！"/>
+			<wait talk = "再几个回合，你们必败！"/>
+			<wait talk = "上天赐我力量吧！"/>
+			<wait talk = "暴击啊，我需要暴击！"/>
+			<wait talk = "人品大爆发了！"/>
+			<skill talk = "100遍啊100遍！"/>
+			<skill talk = "嘿咻！"/>
+			<skill talk = "看我的！"/>
+			<skill talk = "我去！"/>
+			<skill talk = "超级赛亚人变身！"/>
+			<skill talk = "我手一挥你骨一堆！"/>
+			<win talk = "得永生啊得永生！"/>
+			<win talk = "得胜还朝！"/>
+			<win talk = "胜得太轻松了！"/>
+			<win talk = "再回去练练吧！"/>
+			<win talk = "你肯定打不过我的！"/>
+			<win talk = "常胜将军就是我！"/>
+			<win talk = "彪悍的人生，不需要解释！"/>
+			<win talk = "我是谁？你也不看看！我爸是李刚！"/>
+			<die talk = "我去！"/>
+			<die talk = "挂了！"/>
+			<die talk = "我不甘心啊！"/>
+			<die talk = "我擦!"/>
+			<die talk = "你运气好而已！"/>
+			<ghost talk = "打死他！"/>
+			<ghost talk = "弄死他！"/>
+			<ghost talk = "往死里整啊！"/>
+			<ghost talk = "给我报仇啊！"/>
+			<ghost talk = "空虚寂寞冷！"/>
+			<ghost talk = "为什么总是我？"/>
+			<ghost talk = "其实我是一朵浮云！"/>
+		</man>
+		<women>
+			<openning talk = "一群臭男人！"/>
+			<openning talk = "真讨厌！"/>
+			<openning talk = "弄死他们！"/>
+			<wait talk = "人不犯我，我不犯人！"/>
+			<wait talk = "真着急，快点啊！"/>
+			<wait talk = "人品大爆发了！"/>
+			<wait talk = "再来呀！"/>
+			<skill talk = "魔法美少女！"/>
+			<skill talk = "老娘怒了！"/>
+			<skill talk = "去死吧！"/>
+			<skill talk = "打死他！"/>
+			<skill talk = "坏人！"/>
+			<win talk = "胜利！"/>
+			<win talk = "敢和老娘打！"/>
+			<win talk = "胜得太轻松了！"/>
+			<win talk = "再回去练练吧！"/>
+			<win talk = "你肯定打不过我的！"/>
+			<die talk = "不要！"/>
+			<die talk = "欺负人家！"/>
+			<die talk = "呀买碟！"/>
+			<die talk = "人家不干了！"/>
+			<die talk = "我想的到开头，确想不到这结果！"/>
+			<ghost talk = "加油加油！"/>
+			<ghost talk = "都是坏人！"/>
+			<ghost talk = "姐玩的就是寂寞！"/>
+			<ghost talk = "我是天使！"/>
+			<ghost talk = "打死那个坏人！"/>
+		</women>
+	</bean>
+</talk>

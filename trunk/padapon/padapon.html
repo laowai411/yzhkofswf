@@ -1,0 +1,132 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <link rel="shortcut icon" href="favicon.ico" />
+   <meta name="keywords" content="豆斗乐" />
+   <meta name="description" content="豆斗乐" />
+   <title>豆斗乐</title>
+	<style type="text/css">
+	*,body, div, p, img, a{margin:0px; padding:0px; border:0px;font-weight: normal;text-align:center}
+	.maindiv{margin:0px; padding:0px;width:950;text-align:center}
+	</style>
+</head>
+<body>
+<script src="http://qzonestyle.gtimg.cn/ac/applib/fusion/lib_v1.1.js" charset="utf-8" type="text/javascript"></script>
+<script type="text/javascript"> 
+//fusion.init({platform:"pengyou"}); 
+fusion.init(); 
+//fusion.system.debug();
+function inviteFriend()
+{
+	fusion.dialog.inviteFriend({appid:22272});
+}
+
+</script>
+ <script type="text/javascript" src="swfobject.js"></script>
+        <script type="text/javascript">
+            <!-- For version detection, set to min. required Flash Player version, or 0 (or 0.0.0), for no version detection. --> 
+            var swfVersionStr = "10.2.0";
+            <!-- To use express install, set to playerProductInstall.swf, otherwise the empty string. -->
+            
+            function getparastr(strname) {
+			 var hrefstr,pos,parastr,para,tempstr;
+			 hrefstr = window.location.href;
+			 pos = hrefstr.indexOf("?")
+			 parastr = hrefstr.substring(pos+1);
+			
+			 para = parastr.split("&");
+			 tempstr="";
+			 for(i=0;i<para.length;i++)
+			 {
+			  tempstr = para[i];
+			  pos = tempstr.indexOf("=");
+			  if(tempstr.substring(0,pos) == strname) {
+			   return tempstr.substring(pos+1);
+			  }
+			 }
+			 return null;
+			}
+            // 获取program参数
+			//var programstr = getparastr("openid");
+			//alert("openid = " + programstr + ";");
+			//var programstr = getparastr("openkey");
+			//alert("openkey = " + programstr + ";");
+			var version = "1.01";
+            var xiSwfUrlStr = "playerProductInstall.swf";
+            var flashvars = {openid:getparastr("openid"),openkey:getparastr("openkey")};
+            var params = {};
+            params.quality = "high";
+            params.bgcolor = "#0";
+            params.allowscriptaccess = "sameDomain";
+            params.allowfullscreen = "true";
+            params.width = 950;
+            params.height = 580;
+            params.wmode = "opaque";
+            var attributes = {};
+            attributes.id = "padapon";
+            attributes.name = "padapon";
+            attributes.align = "middle";
+            swfobject.embedSWF(
+                "padapon.swf?version=" + version, "flashContent", 
+                "950", "580", 
+                swfVersionStr, xiSwfUrlStr, 
+                flashvars, params, attributes);
+			<!-- JavaScript enabled so display the flashContent div in case it is not replaced with a swf object. -->
+			swfobject.createCSS("#flashContent", "display:block;text-align:left;");
+        </script>
+
+<div class="maindiv">
+	<img src="image/0.png"><a href="javascript:location.reload();"><img src="image/startgame.png"></a><img src="image/10.png"><a href="javascript:inviteFriend();"><img src="image/yaoqing.png"></a><img src="image/11.png"><a href="#"><img src="image/gamehelp.png"></a><img src="image/12.png"><a href="http://qbar.qq.com/opensns/l-1308914008.htm"><img src="image/bbs.png"></a><img src="image/13.png"><a href="#"><img src="image/chongzhi.png"></a><img src="image/14.png"><a href="#"><img src="image/huangzuang.png"></a><img src="image/15.png"><a href="#"><img src="image/addshouchang.png"></a><img src="image/16.png"><a href="#"><img src="image/kuijie.png"></a><img src="image/17.png"><br/><img src="image/1.png">
+</div>
+ <!-- SWFObject's dynamic embed method replaces this alternative HTML content with Flash content when enough 
+			 JavaScript and Flash plug-in support is available. The div is initially hidden so that it doesn't show
+			 when JavaScript is disabled.
+		-->
+        <div id="flashContent">
+        	<p>
+	        	To view this page ensure that Adobe Flash Player version 
+				10.2.0 or greater is installed. 
+			</p>
+			<script type="text/javascript"> 
+				var pageHost = ((document.location.protocol == "https:") ? "https://" :	"http://"); 
+				document.write("<a href='http://www.adobe.com/go/getflashplayer'><img src='" 
+								+ pageHost + "www.adobe.com/images/shared/download_buttons/get_flash_player.gif' alt='Get Adobe Flash player' /></a>" ); 
+			</script> 
+        </div>
+	   	
+       	<noscript>
+            <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="950" height="580" id="padapon">
+                <param name="movie" value="padapon.swf" />
+                <param name="quality" value="high" />
+                <param name="bgcolor" value="#0" />
+                <param name="allowScriptAccess" value="sameDomain" />
+                <param name="allowFullScreen" value="true" />
+                <param name="width" value="950" />
+                <param name="height" value="580" />
+                <!--[if !IE]>-->
+                <object type="application/x-shockwave-flash" data="padapon.swf" width="950" height="580">
+                    <param name="quality" value="high" />
+                    <param name="bgcolor" value="#0" />
+                    <param name="allowScriptAccess" value="sameDomain" />
+                    <param name="allowFullScreen" value="true" />
+                <!--<![endif]-->
+                <!--[if gte IE 6]>-->
+                	<p> 
+                		Either scripts and active content are not permitted to run or Adobe Flash Player version
+                		10.2.0 or greater is not installed.
+                	</p>
+                <!--<![endif]-->
+                    <a href="http://www.adobe.com/go/getflashplayer">
+                        <img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash Player" />
+                    </a>
+                <!--[if !IE]>-->
+                </object>
+                <!--<![endif]-->
+            </object>
+	    </noscript>
+<div id="footer"  class="center p4" style="background-color:#fff;"><font size=2>
+您的豆豆id: <script type="text/javascript">document.write(getparastr("openid"));</script>。<br/>  《豆斗乐》声明：本应用由深圳青游互动网络有限公司提供，若您在使用途中遇到任何问题，请联系QQ：190828570或进入QQ群：161653720。问题反馈邮箱：anking518@qq.com</font>
+</div>
+</body>
+</html>
