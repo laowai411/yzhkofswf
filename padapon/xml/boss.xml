@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<boss>
+	<boss id = "1" talkX = "0" talkY = "100">
+		<attackPoint x = "0" y = "100"/>
+		<attackPoint x = "0" y = "200"/>
+	</boss>
+	<boss id = "2" talkX = "0" talkY = "100">
+		<attackPoint x = "0" y = "100"/>
+		<attackPoint x = "0" y = "200"/>
+	</boss>
+	<boss id = "3" talkX = "0" talkY = "100">
+		<attackPoint x = "0" y = "100"/>
+		<attackPoint x = "0" y = "200"/>
+	</boss>
+	<boss id = "4" talkX = "0" talkY = "100">
+		<attackPoint x = "0" y = "100"/>
+		<attackPoint x = "0" y = "200"/>
+	</boss>
+	<boss id = "5" talkX = "0" talkY = "100">
+		<attackPoint x = "0" y = "100"/>
+		<attackPoint x = "0" y = "200"/>
+	</boss>
+	<boss id = "6" talkX = "0" talkY = "100">
+		<attackPoint x = "0" y = "100"/>
+		<attackPoint x = "0" y = "200"/>
+	</boss>
+	<boss id = "7" talkX = "0" talkY = "230">
+		<attackPoint x = "25" y = "60"/>
+		<attackPoint x = "25" y = "158"/>
+	</boss>
+	<boss id = "8" talkX = "0" talkY = "100">
+		<attackPoint x = "0" y = "100"/>
+		<attackPoint x = "0" y = "200"/>
+	</boss>
+	<boss id = "9" talkX = "0" talkY = "100">
+		<attackPoint x = "0" y = "100"/>
+		<attackPoint x = "0" y = "200"/>
+	</boss>
+	<boss id = "10" talkX = "0" talkY = "100">
+		<attackPoint x = "0" y = "100"/>
+		<attackPoint x = "0" y = "200"/>
+	</boss>
+	<boss id = "11" talkX = "0" talkY = "100">
+		<attackPoint x = "0" y = "100"/>
+		<attackPoint x = "0" y = "200"/>
+	</boss>
+	<boss id = "12" talkX = "0" talkY = "100">
+		<attackPoint x = "0" y = "100"/>
+		<attackPoint x = "0" y = "200"/>
+	</boss>
+	<boss id = "13" talkX = "0" talkY = "100">
+		<attackPoint x = "0" y = "100"/>
+		<attackPoint x = "0" y = "200"/>
+	</boss>
+	<boss id = "14" talkX = "0" talkY = "100">
+		<attackPoint x = "0" y = "100"/>
+		<attackPoint x = "0" y = "200"/>
+	</boss>
+	<boss id = "15" talkX = "0" talkY = "100">
+		<attackPoint x = "0" y = "100"/>
+		<attackPoint x = "0" y = "200"/>
+	</boss>
+	<boss id = "16" talkX = "0" talkY = "100">
+		<attackPoint x = "0" y = "100"/>
+		<attackPoint x = "0" y = "200"/>
+	</boss>
+	<boss id = "17" talkX = "0" talkY = "100">
+		<attackPoint x = "0" y = "100"/>
+		<attackPoint x = "0" y = "200"/>
+	</boss>
+	<boss id = "18" talkX = "0" talkY = "100">
+		<attackPoint x = "0" y = "100"/>
+		<attackPoint x = "0" y = "200"/>
+	</boss>
+	<boss id = "19" talkX = "0" talkY = "100">
+		<attackPoint x = "0" y = "100"/>
+		<attackPoint x = "0" y = "200"/>
+	</boss>
+	<boss id = "20" talkX = "0" talkY = "100">
+		<attackPoint x = "0" y = "100"/>
+		<attackPoint x = "0" y = "200"/>
+	</boss>
+	<boss id = "21" talkX = "0" talkY = "211">
+		<attackPoint x = "0" y = "70"/>
+		<attackPoint x = "0" y = "177"/>
+	</boss>
+	<boss id = "22" talkX = "0" talkY = "100">
+		<attackPoint x = "0" y = "100"/>
+		<attackPoint x = "0" y = "200"/>
+	</boss>
+	<boss id = "23" talkX = "0" talkY = "100">
+		<attackPoint x = "0" y = "100"/>
+		<attackPoint x = "0" y = "200"/>
+	</boss>
+	<boss id = "24" talkX = "0" talkY = "100">
+		<attackPoint x = "0" y = "100"/>
+		<attackPoint x = "0" y = "200"/>
+	</boss>
+	<boss id = "25" talkX = "0" talkY = "238">
+		<attackPoint x = "57" y = "73"/>
+		<attackPoint x = "70" y = "159"/>
+	</boss>
+	<boss id = "26" talkX = "0" talkY = "100">
+		<attackPoint x = "0" y = "100"/>
+		<attackPoint x = "0" y = "200"/>
+	</boss>
+	<boss id = "27" talkX = "0" talkY = "100">
+		<attackPoint x = "0" y = "100"/>
+		<attackPoint x = "0" y = "200"/>
+	</boss>
+	<boss id = "28" talkX = "-131" talkY = "148">
+		<attackPoint x = "103" y = "35"/>
+		<attackPoint x = "103" y = "148"/>
+	</boss>
+	<boss id = "29" talkX = "-131" talkY = "148">
+		<attackPoint x = "103" y = "35"/>
+		<attackPoint x = "103" y = "148"/>
+	</boss>
+	<boss id = "30" talkX = "-131" talkY = "148">
+		<attackPoint x = "103" y = "35"/>
+		<attackPoint x = "103" y = "148"/>
+	</boss>
+	<boss id = "31" talkX = "-131" talkY = "148">
+		<attackPoint x = "103" y = "35"/>
+		<attackPoint x = "103" y = "148"/>
+	</boss>
+	<boss id = "32" talkX = "0" talkY = "320">
+		<attackPoint x = "0" y = "24"/>
+		<attackPoint x = "0" y = "178"/>
+	</boss>
+	<boss id = "33" talkX = "0" talkY = "320">
+		<attackPoint x = "0" y = "24"/>
+		<attackPoint x = "0" y = "178"/>
+	</boss>
+	<boss id = "34" talkX = "0" talkY = "320">
+		<attackPoint x = "0" y = "24"/>
+		<attackPoint x = "0" y = "178"/>
+	</boss>
+	<boss id = "35" talkX = "0" talkY = "320">
+		<attackPoint x = "0" y = "24"/>
+		<attackPoint x = "0" y = "178"/>
+	</boss>
+	<boss id = "36" talkX = "95" talkY = "320">
+		<attackPoint x = "95" y = "24"/>
+		<attackPoint x = "96" y = "178"/>
+	</boss>
+	<boss id = "37" talkX = "95" talkY = "320">
+		<attackPoint x = "95" y = "24"/>
+		<attackPoint x = "96" y = "178"/>
+	</boss>
+	<boss id = "38" talkX = "95" talkY = "320">
+		<attackPoint x = "95" y = "24"/>
+		<attackPoint x = "96" y = "178"/>
+	</boss>
+	<boss id = "39" talkX = "95" talkY = "320">
+		<attackPoint x = "95" y = "24"/>
+		<attackPoint x = "96" y = "178"/>
+	</boss>
+	<boss id = "40" talkX = "95" talkY = "320">
+		<attackPoint x = "95" y = "24"/>
+		<attackPoint x = "96" y = "178"/>
+	</boss>
+	<boss id = "41" talkX = "95" talkY = "320">
+		<attackPoint x = "95" y = "24"/>
+		<attackPoint x = "96" y = "178"/>
+	</boss>
+	<boss id = "42" talkX = "95" talkY = "320">
+		<attackPoint x = "95" y = "24"/>
+		<attackPoint x = "96" y = "178"/>
+	</boss>
+	<boss id = "43" talkX = "95" talkY = "320">
+		<attackPoint x = "95" y = "24"/>
+		<attackPoint x = "96" y = "178"/>
+	</boss>
+	<boss id = "44" talkX = "0" talkY = "211">
+		<attackPoint x = "0" y = "70"/>
+		<attackPoint x = "0" y = "177"/>
+	</boss>
+	<boss id = "45" talkX = "0" talkY = "211">
+		<attackPoint x = "0" y = "70"/>
+		<attackPoint x = "0" y = "177"/>
+	</boss>
+	<boss id = "46" talkX = "0" talkY = "211">
+		<attackPoint x = "0" y = "70"/>
+		<attackPoint x = "0" y = "177"/>
+	</boss>
+	<boss id = "47" talkX = "0" talkY = "211">
+		<attackPoint x = "0" y = "70"/>
+		<attackPoint x = "0" y = "177"/>
+	</boss>
+</boss>

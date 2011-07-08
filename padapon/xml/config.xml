@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config version = "1.0">
+	<net>
+		<socket ip = "192.168.0.108" port = "9877"/>
+	</net>
+	<resource src = "swf">
+		<battleSubPath src = ""/>
+	</resource>
+	<sounds source="">
+		<sound id="001" cls="Sound001"/>
+		<sound id="002" cls="Sound002"/>
+		<sound id="003" cls="Sound003"/>
+		<sound id="004" cls="Sound004"/>
+		<sound id="005" cls="Sound005"/>
+	</sounds>
+	<musics root="sound/">
+		<music filename="001"/>
+	</musics>
+</config>
